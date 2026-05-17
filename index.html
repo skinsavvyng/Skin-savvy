@@ -14,11 +14,7 @@
 }
 html{scroll-behavior:smooth}
 body{font-family:'DM Sans',sans-serif;color:var(--text);background:var(--white);overflow-x:hidden}
-
-/* ANNOUNCEMENT */
 .announce{background:var(--green);color:#fff;text-align:center;padding:.5rem;font-size:.78rem;letter-spacing:.08em}
-
-/* NAV */
 nav{background:#fff;border-bottom:1px solid var(--border);position:sticky;top:0;z-index:500;padding:0 1rem}
 .nav-inner{display:flex;align-items:center;height:64px;gap:.8rem}
 .hamburger{background:none;border:none;cursor:pointer;display:flex;flex-direction:column;gap:5px;padding:4px}
@@ -29,8 +25,6 @@ nav{background:#fff;border-bottom:1px solid var(--border);position:sticky;top:0;
 .icon-btn{background:none;border:none;cursor:pointer;color:var(--text);position:relative;padding:4px;display:flex}
 .icon-btn svg{width:22px;height:22px;stroke:currentColor;fill:none;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round}
 .badge{position:absolute;top:-3px;right:-3px;background:var(--green);color:#fff;font-size:.6rem;width:16px;height:16px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:700}
-
-/* MOBILE MENU */
 .mobile-menu{position:fixed;inset:0;z-index:1000;pointer-events:none}
 .menu-overlay{position:absolute;inset:0;background:rgba(0,0,0,.5);opacity:0;transition:.3s;pointer-events:none}
 .menu-drawer{position:absolute;top:0;left:0;bottom:0;width:80%;max-width:300px;background:#0f1f17;transform:translateX(-100%);transition:.3s;overflow-y:auto;display:flex;flex-direction:column}
@@ -52,12 +46,8 @@ nav{background:#fff;border-bottom:1px solid var(--border);position:sticky;top:0;
 .menu-subitem:hover{color:#fff}
 .menu-footer{padding:1.2rem;border-top:1px solid rgba(255,255,255,.1);display:flex;gap:1rem}
 .social-btn{width:36px;height:36px;border-radius:50%;display:flex;align-items:center;justify-content:center;text-decoration:none;font-size:.9rem}
-
-/* PAGES */
 .page{display:none}
 .page.active{display:block}
-
-/* HERO */
 .hero{position:relative;min-height:85vh;display:flex;align-items:flex-end;overflow:hidden;background:#f8f5f0}
 .hero-img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center top}
 .hero-overlay{position:absolute;inset:0;background:linear-gradient(to top,rgba(0,0,0,.75) 0%,rgba(0,0,0,.2) 50%,transparent 100%)}
@@ -70,14 +60,10 @@ nav{background:#fff;border-bottom:1px solid var(--border);position:sticky;top:0;
 .btn-primary:hover{background:var(--green2)}
 .btn-outline-white{background:transparent;color:#fff;border:1.5px solid rgba(255,255,255,.6);border-radius:100px;padding:.8rem 1.8rem;font-family:inherit;font-size:.9rem;cursor:pointer;transition:.2s}
 .btn-outline-white:hover{border-color:#fff;background:rgba(255,255,255,.1)}
-
-/* SECTIONS */
 section{padding:3rem 1.2rem}
 .section-tag{font-size:.72rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--green2);margin-bottom:.6rem}
 .section-title{font-family:'Cormorant Garamond',serif;font-size:1.9rem;font-weight:700;margin-bottom:.6rem;line-height:1.2}
 .section-sub{color:var(--muted);font-size:.9rem;line-height:1.6;margin-bottom:2rem}
-
-/* CATEGORIES */
 .categories{background:var(--green-bg)}
 .cat-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1rem}
 .cat-card{background:#fff;border-radius:16px;padding:1.4rem 1rem;text-align:center;cursor:pointer;transition:.2s;border:1.5px solid transparent;box-shadow:0 2px 12px rgba(0,0,0,.06)}
@@ -85,12 +71,9 @@ section{padding:3rem 1.2rem}
 .cat-icon{font-size:2rem;margin-bottom:.6rem}
 .cat-card h3{font-size:.88rem;font-weight:600;color:var(--text)}
 .cat-count{font-size:.75rem;color:var(--muted);margin-top:.2rem}
-
-/* FEATURED PRODUCTS */
 .products-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1rem}
 .product-card{background:#fff;border-radius:16px;overflow:hidden;box-shadow:0 2px 12px rgba(0,0,0,.06);cursor:pointer;transition:.2s}
 .product-card:hover{transform:translateY(-3px);box-shadow:0 8px 24px rgba(0,0,0,.12)}
-.product-img{width:100%;height:160px;object-fit:cover;background:var(--green-light);display:flex;align-items:center;justify-content:center;font-size:3rem}
 .product-img-placeholder{width:100%;height:160px;background:linear-gradient(135deg,var(--green-light),#b7e4c7);display:flex;align-items:center;justify-content:center;font-size:2.5rem}
 .product-info{padding:1rem}
 .product-cat{font-size:.7rem;font-weight:600;color:var(--green2);text-transform:uppercase;letter-spacing:.08em;margin-bottom:.3rem}
@@ -99,29 +82,21 @@ section{padding:3rem 1.2rem}
 .product-old-price{font-size:.8rem;color:var(--muted);text-decoration:line-through;margin-left:.3rem}
 .add-to-cart-btn{width:100%;background:var(--green);color:#fff;border:none;border-radius:8px;padding:.6rem;font-family:inherit;font-size:.82rem;font-weight:500;cursor:pointer;margin-top:.7rem;transition:.2s}
 .add-to-cart-btn:hover{background:var(--green2)}
-
-/* ABOUT STRIP */
 .about-strip{background:var(--green);color:#fff;padding:2.5rem 1.2rem}
 .about-strip h2{font-family:'Cormorant Garamond',serif;font-size:1.8rem;margin-bottom:.8rem}
 .about-strip p{opacity:.85;font-size:.9rem;line-height:1.7;margin-bottom:1.5rem}
 .btn-white{background:#fff;color:var(--green);border:none;border-radius:100px;padding:.75rem 1.6rem;font-family:inherit;font-size:.9rem;font-weight:600;cursor:pointer;transition:.2s}
 .btn-white:hover{opacity:.9}
-
-/* VALUES */
 .values-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1rem}
 .value-card{background:var(--green-bg);border-radius:14px;padding:1.2rem;text-align:center}
 .value-icon{font-size:1.8rem;margin-bottom:.6rem}
 .value-card h3{font-size:.88rem;font-weight:600;margin-bottom:.3rem}
 .value-card p{font-size:.78rem;color:var(--muted);line-height:1.5}
-
-/* TESTIMONIALS */
 .testimonials{background:#0f1f17;color:#fff}
 .testi-card{background:rgba(255,255,255,.07);border-radius:14px;padding:1.3rem;margin-bottom:.8rem}
 .stars{color:var(--gold);font-size:.9rem;margin-bottom:.6rem}
 .testi-card p{font-size:.88rem;line-height:1.6;opacity:.85;margin-bottom:.8rem}
 .testi-author{font-size:.75rem;opacity:.5;font-weight:500}
-
-/* SHOP PAGE */
 .shop-header{background:var(--off);padding:1.5rem 1.2rem;border-bottom:1px solid var(--border)}
 .shop-header h1{font-family:'Cormorant Garamond',serif;font-size:1.8rem;font-weight:700}
 .breadcrumb{font-size:.78rem;color:var(--muted);margin-top:.3rem}
@@ -133,9 +108,6 @@ section{padding:3rem 1.2rem}
 .shop-controls{padding:.8rem 1.2rem;display:flex;align-items:center;justify-content:space-between;background:#fff;border-bottom:1px solid var(--border)}
 .sort-select{border:1.5px solid var(--border);border-radius:8px;padding:.4rem .7rem;font-family:inherit;font-size:.82rem;outline:none;color:var(--text)}
 .shop-grid{padding:1.2rem;display:grid;grid-template-columns:repeat(2,1fr);gap:1rem}
-
-/* PRODUCT DETAIL */
-.product-detail-img{width:100%;height:280px;object-fit:cover;background:var(--green-light);display:flex;align-items:center;justify-content:center;font-size:5rem}
 .product-detail-img-placeholder{width:100%;height:280px;background:linear-gradient(135deg,var(--green-light),#b7e4c7);display:flex;align-items:center;justify-content:center;font-size:5rem}
 .product-detail-info{padding:1.5rem 1.2rem}
 .product-detail-info h1{font-family:'Cormorant Garamond',serif;font-size:1.8rem;font-weight:700;margin-bottom:.5rem}
@@ -146,8 +118,6 @@ section{padding:3rem 1.2rem}
 .qty-num{font-size:1rem;font-weight:600;min-width:24px;text-align:center}
 .btn-add-cart{width:100%;background:var(--green);color:#fff;border:none;border-radius:12px;padding:1rem;font-family:inherit;font-size:1rem;font-weight:600;cursor:pointer;transition:.2s;margin-bottom:.8rem}
 .btn-add-cart:hover{background:var(--green2)}
-
-/* CART */
 .cart-page{padding:1.2rem}
 .cart-page h1{font-family:'Cormorant Garamond',serif;font-size:1.8rem;margin-bottom:1.5rem}
 .cart-item{display:flex;gap:1rem;padding:1rem 0;border-bottom:1px solid var(--border);align-items:center}
@@ -158,7 +128,6 @@ section{padding:3rem 1.2rem}
 .cart-item-price{font-size:.88rem;color:var(--green);font-weight:600}
 .cart-item-qty{display:flex;align-items:center;gap:.6rem;margin-top:.4rem}
 .cart-qty-btn{width:26px;height:26px;border:1px solid var(--border);border-radius:50%;background:none;cursor:pointer;font-size:.9rem;display:flex;align-items:center;justify-content:center}
-.cart-remove{background:none;border:none;color:#e74c3c;cursor:pointer;font-size.8rem;margin-left:auto}
 .cart-summary{background:var(--green-bg);border-radius:14px;padding:1.2rem;margin-top:1.2rem}
 .cart-summary-row{display:flex;justify-content:space-between;margin-bottom:.6rem;font-size:.9rem}
 .cart-summary-row.total{font-weight:700;font-size:1rem;border-top:1px solid var(--border);padding-top:.6rem;margin-top:.4rem}
@@ -168,10 +137,7 @@ section{padding:3rem 1.2rem}
 .empty-cart-icon{font-size:4rem;margin-bottom:1rem}
 .empty-cart h2{font-family:'Cormorant Garamond',serif;font-size:1.5rem;margin-bottom:.5rem}
 .empty-cart p{color:var(--muted);font-size:.9rem;margin-bottom:1.5rem}
-
-/* CHECKOUT */
 .checkout-page{padding:1.2rem}
-.checkout-page h1{font-family:'Cormorant Garamond',serif;font-size:1.8rem;margin-bottom.1.5rem}
 .checkout-steps{display:flex;align-items:center;gap:.5rem;margin-bottom:1.5rem;font-size:.78rem}
 .step{color:var(--muted)}
 .step.active{color:var(--green);font-weight:600}
@@ -193,16 +159,12 @@ section{padding:3rem 1.2rem}
 .upload-preview{width:100%;border-radius:8px;margin-top:.8rem;max-height:200px;object-fit:contain}
 .btn-place-order{width:100%;background:var(--green);color:#fff;border:none;border-radius:12px;padding:1rem;font-family:inherit;font-size:1rem;font-weight:600;cursor:pointer;margin-top:1rem;transition:.2s}
 .btn-place-order:hover{background:var(--green2)}
-
-/* ORDER SUCCESS */
 .order-success{text-align:center;padding:4rem 1.5rem}
 .success-icon{font-size:4rem;margin-bottom:1rem}
 .order-success h2{font-family:'Cormorant Garamond',serif;font-size:1.8rem;margin-bottom:.6rem}
 .order-success p{color:var(--muted);font-size:.9rem;line-height:1.6;margin-bottom:1.5rem}
 .order-ref{background:var(--green-bg);border-radius:10px;padding:1rem;margin-bottom:1.5rem;font-size:.9rem}
 .order-ref strong{color:var(--green);font-size:1.1rem}
-
-/* AUTH */
 .auth-page{min-height:80vh;display:flex;align-items:center;justify-content:center;padding:2rem 1.2rem;background:var(--off)}
 .auth-card{background:#fff;border-radius:20px;padding:2rem 1.5rem;width:100%;max-width:400px;box-shadow:0 4px 24px rgba(0,0,0,.08)}
 .auth-card h2{font-family:'Cormorant Garamond',serif;font-size:1.8rem;text-align:center;margin-bottom:.3rem}
@@ -211,8 +173,6 @@ section{padding:3rem 1.2rem}
 .btn-auth:hover{background:var(--green2)}
 .auth-switch{text-align:center;font-size:.85rem;color:var(--muted);margin-top:1rem}
 .auth-switch a{color:var(--green);cursor:pointer;font-weight:500}
-
-/* ADMIN */
 .admin-page{min-height:100vh;background:var(--off)}
 .admin-header{background:var(--green);color:#fff;padding:1rem 1.2rem;display:flex;align-items:center;justify-content:space-between}
 .admin-header h1{font-family:'Cormorant Garamond',serif;font-size:1.3rem}
@@ -238,8 +198,6 @@ section{padding:3rem 1.2rem}
 .action-btn{background:none;border:none;cursor:pointer;padding:.2rem .4rem;border-radius:4px;font-size:.78rem;font-weight:500}
 .edit-btn{color:var(--green)}
 .delete-btn{color:#e74c3c}
-
-/* MODAL */
 .modal-overlay{display:none;position:fixed;inset:0;z-index:2000;background:rgba(0,0,0,.5);align-items:center;justify-content:center;padding:1rem}
 .modal-overlay.open{display:flex}
 .modal{background:#fff;border-radius:20px;padding:1.5rem;width:100%;max-width:420px;max-height:90vh;overflow-y:auto;animation:modalIn .25s ease}
@@ -247,8 +205,6 @@ section{padding:3rem 1.2rem}
 .modal h3{font-family:'Cormorant Garamond',serif;font-size:1.4rem;margin-bottom:1.2rem}
 .modal-close{float:right;background:none;border:none;font-size:1.3rem;cursor:pointer;color:var(--muted);margin-top:-4px}
 .btn-modal-save{width:100%;background:var(--green);color:#fff;border:none;border-radius:10px;padding:.85rem;font-family:inherit;font-size:.95rem;font-weight:600;cursor:pointer;margin-top:.5rem}
-
-/* FOOTER */
 footer{background:#0f1f17;color:#fff;padding:2.5rem 1.2rem 1.5rem}
 .footer-logo{font-family:'Cormorant Garamond',serif;font-size:1.2rem;font-weight:600;letter-spacing:.1em;margin-bottom:.5rem}
 .footer-tagline{font-size:.82rem;opacity:.6;margin-bottom:2rem;line-height:1.6}
@@ -260,55 +216,38 @@ footer{background:#0f1f17;color:#fff;padding:2.5rem 1.2rem 1.5rem}
 .social-icon:hover{background:var(--green3)}
 .footer-contact{font-size:.82rem;opacity:.65;line-height:1.8}
 .footer-bottom{border-top:1px solid rgba(255,255,255,.1);margin-top:1.5rem;padding-top:1.2rem;font-size:.75rem;opacity:.5;text-align:center}
-
-/* WHATSAPP */
 .whatsapp-btn{position:fixed;bottom:1.5rem;right:1.2rem;z-index:300;width:52px;height:52px;background:#25d366;border-radius:50%;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 16px rgba(37,211,102,.4);cursor:pointer;text-decoration:none;animation:pulse 2s infinite}
 @keyframes pulse{0%,100%{box-shadow:0 4px 16px rgba(37,211,102,.4)}50%{box-shadow:0 4px 24px rgba(37,211,102,.7)}}
 .whatsapp-btn svg{width:28px;height:28px;fill:#fff}
-
-/* ABOUT PAGE */
 .about-hero{background:linear-gradient(135deg,var(--green) 0%,var(--green2) 100%);color:#fff;padding:3rem 1.2rem;text-align:center}
 .about-hero h1{font-family:'Cormorant Garamond',serif;font-size:2rem;margin-bottom:.6rem}
 .about-hero p{opacity:.85;font-size:.9rem;line-height:1.6}
 .about-content{padding:2rem 1.2rem}
 .about-content p{font-size:.9rem;color:var(--muted);line-height:1.8;margin-bottom:1rem}
-
-/* CONTACT */
 .contact-page{padding:2rem 1.2rem}
-.contact-page h1{font-family:'Cormorant Garamond',serif;font-size:1.8rem;margin-bottom.1.5rem}
 .contact-info{background:var(--green-bg);border-radius:14px;padding:1.2rem;margin-bottom:1.2rem}
 .contact-row{display:flex;align-items:flex-start;gap:.8rem;margin-bottom:.8rem;font-size:.88rem}
 .contact-icon{font-size:1.1rem;margin-top:.1rem}
-
-/* BLOG */
 .blog-page{padding:1.2rem}
-.blog-page h1{font-family:'Cormorant Garamond',serif;font-size:1.8rem;margin-bottom:1.2rem}
 .blog-card{background:#fff;border-radius:14px;overflow:hidden;box-shadow:0 2px 12px rgba(0,0,0,.06);margin-bottom:1rem}
 .blog-img{width:100%;height:160px;background:linear-gradient(135deg,var(--green-light),#b7e4c7);display:flex;align-items:center;justify-content:center;font-size:3rem}
 .blog-info{padding:1rem}
 .blog-tag{font-size:.7rem;font-weight:600;color:var(--green2);text-transform:uppercase;letter-spacing:.08em;margin-bottom:.3rem}
 .blog-info h3{font-family:'Cormorant Garamond',serif;font-size:1.2rem;font-weight:600;margin-bottom:.4rem}
 .blog-info p{font-size:.82rem;color:var(--muted);line-height:1.5}
-
-/* TOAST */
 .toast{position:fixed;bottom:5rem;left:50%;transform:translateX(-50%);background:#0f1f17;color:#fff;padding:.7rem 1.4rem;border-radius:100px;font-size:.85rem;font-weight:500;z-index:9999;display:none;white-space:nowrap}
 .toast.show{display:block;animation:toastIn .3s ease}
 @keyframes toastIn{from{opacity:0;transform:translateX(-50%) translateY(10px)}to{opacity:1;transform:translateX(-50%) translateY(0)}}
-
-/* LOADING */
 .loading{text-align:center;padding:3rem;color:var(--muted);font-size:.9rem}
 .spinner{width:32px;height:32px;border:3px solid var(--green-light);border-top-color:var(--green);border-radius:50%;animation:spin .8s linear infinite;margin:0 auto 1rem}
 @keyframes spin{to{transform:rotate(360deg)}}
-
 .no-products{text-align:center;padding:3rem;color:var(--muted)}
 </style>
 </head>
 <body>
 
-<!-- ANNOUNCEMENT -->
-<div class="announce"> Glow Naturally, Stay Skin Savvy</div>
+<div class="announce">🌿 Skin Savvy | Natural Skin & Hair Care Essentials</div>
 
-<!-- NAV -->
 <nav>
   <div class="nav-inner">
     <button class="hamburger" onclick="toggleMenu()">
@@ -333,7 +272,6 @@ footer{background:#0f1f17;color:#fff;padding:2.5rem 1.2rem 1.5rem}
   </div>
 </nav>
 
-<!-- MOBILE MENU -->
 <div class="mobile-menu" id="mobile-menu">
   <div class="menu-overlay" onclick="toggleMenu()"></div>
   <div class="menu-drawer">
@@ -347,9 +285,7 @@ footer{background:#0f1f17;color:#fff;padding:2.5rem 1.2rem 1.5rem}
     <div class="menu-nav">
       <button class="menu-item" onclick="showPage('home-page');toggleMenu()">HOME</button>
       <button class="menu-item" onclick="showPage('shop-page');toggleMenu()">ALL PRODUCTS</button>
-      <button class="menu-item" onclick="toggleSubMenu('fragrance-sub')">
-        BODY CARE <span>›</span>
-      </button>
+      <button class="menu-item" onclick="toggleSubMenu('fragrance-sub')">BODY CARE <span>›</span></button>
       <div class="menu-sub" id="fragrance-sub">
         <button class="menu-subitem" onclick="filterByCategory('Shea Butter');showPage('shop-page');toggleMenu()">SHEA BUTTER</button>
         <button class="menu-subitem" onclick="filterByCategory('Face & Body');showPage('shop-page');toggleMenu()">FACE & BODY</button>
@@ -369,12 +305,10 @@ footer{background:#0f1f17;color:#fff;padding:2.5rem 1.2rem 1.5rem}
   </div>
 </div>
 
-<!-- =================== PAGES =================== -->
-
 <!-- HOME PAGE -->
 <div class="page active" id="home-page">
   <div class="hero">
-    <img class="hero-img" src="https://i.imgur.com/placeholder.jpg" alt="Skin Savvy" id="hero-img" onerror="this.style.display='none'">
+    <img class="hero-img" src="https://i.imgur.com/placeholder.jpg" alt="Skin Savvy" onerror="this.style.display='none'">
     <div class="hero-overlay"></div>
     <div class="hero-content">
       <div class="hero-tag">🌿 Natural & Organic</div>
@@ -387,75 +321,33 @@ footer{background:#0f1f17;color:#fff;padding:2.5rem 1.2rem 1.5rem}
     </div>
   </div>
 
-  <!-- CATEGORIES -->
   <section class="categories">
     <div class="section-tag">Browse by Category</div>
     <div class="section-title">Our Collections</div>
     <div class="section-sub">Handcrafted with nature's finest ingredients</div>
     <div class="cat-grid">
-      <div class="cat-card" onclick="filterByCategory('Shea Butter');showPage('shop-page')">
-        <div class="cat-icon">🧴</div>
-        <h3>Shea Butter</h3>
-        <div class="cat-count">Pure & Natural</div>
-      </div>
-      <div class="cat-card" onclick="filterByCategory('Face & Body');showPage('shop-page')">
-        <div class="cat-icon">✨</div>
-        <h3>Face & Body</h3>
-        <div class="cat-count">Scrubs & Oils</div>
-      </div>
-      <div class="cat-card" onclick="filterByCategory('Hair Care');showPage('shop-page')">
-        <div class="cat-icon">💆</div>
-        <h3>Hair Care</h3>
-        <div class="cat-count">Growth & Nourishment</div>
-      </div>
-      <div class="cat-card" onclick="filterByCategory('Herbal');showPage('shop-page')">
-        <div class="cat-icon">🌱</div>
-        <h3>Herbal</h3>
-        <div class="cat-count">Natural Remedies</div>
-      </div>
-      <div class="cat-card" onclick="filterByCategory('After Shave');showPage('shop-page')">
-        <div class="cat-icon">🧔</div>
-        <h3>After Shave</h3>
-        <div class="cat-count">Men's Care</div>
-      </div>
-      <div class="cat-card" onclick="filterByCategory('Combos');showPage('shop-page')">
-        <div class="cat-icon">🎁</div>
-        <h3>Combos</h3>
-        <div class="cat-count">Value Bundles</div>
-      </div>
+      <div class="cat-card" onclick="filterByCategory('Shea Butter');showPage('shop-page')"><div class="cat-icon">🧴</div><h3>Shea Butter</h3><div class="cat-count">Pure & Natural</div></div>
+      <div class="cat-card" onclick="filterByCategory('Face & Body');showPage('shop-page')"><div class="cat-icon">✨</div><h3>Face & Body</h3><div class="cat-count">Scrubs & Oils</div></div>
+      <div class="cat-card" onclick="filterByCategory('Hair Care');showPage('shop-page')"><div class="cat-icon">💆</div><h3>Hair Care</h3><div class="cat-count">Growth & Nourishment</div></div>
+      <div class="cat-card" onclick="filterByCategory('Herbal');showPage('shop-page')"><div class="cat-icon">🌱</div><h3>Herbal</h3><div class="cat-count">Natural Remedies</div></div>
+      <div class="cat-card" onclick="filterByCategory('After Shave');showPage('shop-page')"><div class="cat-icon">🧔</div><h3>After Shave</h3><div class="cat-count">Men's Care</div></div>
+      <div class="cat-card" onclick="filterByCategory('Combos');showPage('shop-page')"><div class="cat-icon">🎁</div><h3>Combos</h3><div class="cat-count">Value Bundles</div></div>
     </div>
   </section>
 
-  <!-- FEATURED PRODUCTS -->
   <section>
     <div class="section-tag">Featured</div>
     <div class="section-title">Best Sellers</div>
     <div class="section-sub">Loved by our customers</div>
-    <div class="products-grid" id="featured-products">
-      <div class="loading"><div class="spinner"></div>Loading...</div>
-    </div>
+    <div class="products-grid" id="featured-products"><div class="loading"><div class="spinner"></div>Loading...</div></div>
   </section>
 
-  <!-- ABOUT STRIP -->
   <div class="about-strip">
     <h2>Natural Skin & Hair Care Essentials</h2>
     <p>Located in Onitsha, Anambra State. We believe in the power of nature to transform your skin and hair. Every product is carefully crafted with the finest natural ingredients.</p>
     <button class="btn-white" onclick="showPage('about-page')">Our Story</button>
   </div>
 
-  <!-- VALUES -->
-  <section>
-    <div class="section-tag">Why Choose Us</div>
-    <div class="section-title">The Skin Savvy Difference</div>
-    <div class="values-grid">
-      <div class="value-card"><div class="value-icon">🌿</div><h3>100% Natural</h3><p>Pure plant-based ingredients only</p></div>
-      <div class="value-card"><div class="value-icon">✋</div><h3>Handcrafted</h3><p>Made with care and attention</p></div>
-      <div class="value-card"><div class="value-icon">🐰</div><h3>Cruelty Free</h3><p>Never tested on animals</p></div>
-      <div class="value-card"><div class="value-icon">💚</div><h3>Skin Safe</h3><p>Gentle for all skin types</p></div>
-    </div>
-  </section>
-
-  <!-- TESTIMONIALS -->
   <section class="testimonials">
     <div class="section-tag" style="color:var(--green3)">Reviews</div>
     <div class="section-title">What Customers Say</div>
@@ -464,7 +356,6 @@ footer{background:#0f1f17;color:#fff;padding:2.5rem 1.2rem 1.5rem}
     <div class="testi-card"><div class="stars">★★★★★</div><p>"Savvy Herbal Soap cleared my skin completely. I highly recommend Skin Savvy products!"</p><div class="testi-author">— Blessing A., Abuja</div></div>
   </section>
 
-  <!-- NEWSLETTER -->
   <section style="background:var(--green-bg);text-align:center">
     <div class="section-tag">Stay Connected</div>
     <div class="section-title">Join Our Community</div>
@@ -500,16 +391,14 @@ footer{background:#0f1f17;color:#fff;padding:2.5rem 1.2rem 1.5rem}
       <option value="newest">Newest First</option>
     </select>
   </div>
-  <div class="shop-grid" id="shop-grid">
-    <div class="loading" style="grid-column:span 2"><div class="spinner"></div>Loading products...</div>
-  </div>
+  <div class="shop-grid" id="shop-grid"><div class="loading" style="grid-column:span 2"><div class="spinner"></div>Loading products...</div></div>
 </div>
 
 <!-- PRODUCT DETAIL PAGE -->
 <div class="page" id="product-detail-page">
   <div style="padding:.8rem 1.2rem;border-bottom:1px solid var(--border);display:flex;align-items:center;gap:.5rem;font-size:.8rem;color:var(--muted)">
     <button onclick="showPage('shop-page')" style="background:none;border:none;cursor:pointer;font-size:1.2rem;color:var(--text)">←</button>
-    <span onclick="showPage('home-page');cursor:pointer">Home</span> › <span onclick="showPage('shop-page')" style="cursor:pointer">Shop</span> › <span id="detail-breadcrumb" style="color:var(--green)">Product</span>
+    <span onclick="showPage('home-page')" style="cursor:pointer">Home</span> › <span onclick="showPage('shop-page')" style="cursor:pointer">Shop</span> › <span id="detail-breadcrumb" style="color:var(--green)">Product</span>
   </div>
   <div id="product-detail-content"></div>
 </div>
@@ -518,7 +407,7 @@ footer{background:#0f1f17;color:#fff;padding:2.5rem 1.2rem 1.5rem}
 <div class="page" id="cart-page">
   <div class="cart-page">
     <div style="display:flex;align-items:center;gap:.8rem;margin-bottom:1.5rem">
-      <button onclick="history.back()||showPage('shop-page')" style="background:none;border:none;cursor:pointer;font-size:1.2rem">←</button>
+      <button onclick="showPage('shop-page')" style="background:none;border:none;cursor:pointer;font-size:1.2rem">←</button>
       <h1 style="margin:0">Shopping Cart</h1>
     </div>
     <div id="cart-content"></div>
@@ -547,13 +436,74 @@ footer{background:#0f1f17;color:#fff;padding:2.5rem 1.2rem 1.5rem}
       <div class="form-group"><label>Email Address</label><input type="email" id="co-email" placeholder="your@email.com"></div>
       <div class="form-group"><label>Delivery Address *</label><input type="text" id="co-address" placeholder="Street address"></div>
       <div class="form-group"><label>City *</label><input type="text" id="co-city" placeholder="City"></div>
-      <div class="form-group"><label>State *</label><input type="text" id="co-state" placeholder="State"></div>
-      <div class="form-group"><label>Additional Notes</label><textarea id="co-notes" rows="2" placeholder="Any special instructions..."></textarea></div>
+      <div class="form-group"><label>State *</label>
+        <select id="co-state" onchange="calculateDelivery()">
+          <option value="">-- Select your state --</option>
+          <option value="Onitsha">Onitsha (Anambra)</option>
+          <option value="Anambra">Anambra State (Other)</option>
+          <option value="Imo">Imo State</option>
+          <option value="Enugu">Enugu State</option>
+          <option value="Ebonyi">Ebonyi State</option>
+          <option value="Cross River">Cross River State</option>
+          <option value="Abia">Abia State</option>
+          <option value="Rivers">Rivers State (Port Harcourt)</option>
+          <option value="Lagos">Lagos State</option>
+          <option value="Abuja">Abuja (FCT)</option>
+          <option value="Kano">Kano State</option>
+          <option value="Kaduna">Kaduna State</option>
+          <option value="Katsina">Katsina State</option>
+          <option value="Ogun">Ogun State</option>
+          <option value="Oyo">Oyo State</option>
+          <option value="Osun">Osun State</option>
+          <option value="Ondo">Ondo State</option>
+          <option value="Ekiti">Ekiti State</option>
+          <option value="Kwara">Kwara State</option>
+          <option value="Kogi">Kogi State</option>
+          <option value="Benue">Benue State</option>
+          <option value="Niger">Niger State</option>
+          <option value="Plateau">Plateau State</option>
+          <option value="Nassarawa">Nassarawa State</option>
+          <option value="Taraba">Taraba State</option>
+          <option value="Adamawa">Adamawa State</option>
+          <option value="Bauchi">Bauchi State</option>
+          <option value="Gombe">Gombe State</option>
+          <option value="Yobe">Yobe State</option>
+          <option value="Borno">Borno State</option>
+          <option value="Sokoto">Sokoto State</option>
+          <option value="Zamfara">Zamfara State</option>
+          <option value="Kebbi">Kebbi State</option>
+          <option value="Jigawa">Jigawa State</option>
+          <option value="Delta">Delta State</option>
+          <option value="Edo">Edo State</option>
+          <option value="Bayelsa">Bayelsa State</option>
+          <option value="Akwa Ibom">Akwa Ibom State</option>
+        </select>
+      </div>
+      <div id="delivery-fee-box" style="display:none;background:var(--green-bg);border:1.5px solid var(--green3);border-radius:10px;padding:.8rem 1rem;margin-top:.5rem;font-size:.88rem">
+        <div style="display:flex;justify-content:space-between;align-items:center">
+          <span>🚚 Delivery Fee:</span>
+          <strong id="delivery-fee-display" style="color:var(--green)">₦0</strong>
+        </div>
+        <div style="font-size:.75rem;color:var(--muted);margin-top:.3rem">⏱️ Delivery within 7 days of purchase</div>
+      </div>
+      <div class="form-group" style="margin-top:.8rem"><label>Additional Notes</label><textarea id="co-notes" rows="2" placeholder="Any special instructions..."></textarea></div>
     </div>
 
     <div class="form-section">
       <h3>💳 Payment</h3>
       <p style="font-size:.85rem;color:var(--muted);margin-bottom:.8rem">Transfer the exact amount to the account below, then upload your proof of payment.</p>
+      <div style="background:#fff8e1;border:1.5px solid #ffc107;border-radius:10px;padding:.8rem 1rem;margin-bottom:.8rem;font-size:.82rem">
+        <strong>🚚 Delivery Fees:</strong><br>
+        <div style="display:grid;grid-template-columns:1fr auto;gap:.2rem .5rem;margin-top:.4rem;color:var(--muted)">
+          <span>Within Onitsha</span><span style="font-weight:600;color:var(--text)">₦2,500</span>
+          <span>Within Anambra</span><span style="font-weight:600;color:var(--text)">₦3,000</span>
+          <span>South East States</span><span style="font-weight:600;color:var(--text)">₦3,000</span>
+          <span>Port Harcourt</span><span style="font-weight:600;color:var(--text)">₦3,000</span>
+          <span>Lagos & Abuja</span><span style="font-weight:600;color:var(--text)">₦6,000</span>
+          <span>Other States</span><span style="font-weight:600;color:var(--text)">₦3,000</span>
+        </div>
+        <div style="margin-top:.5rem;color:#856404;font-size:.75rem">⏱️ Delivery within 7 days of purchase</div>
+      </div>
       <div class="bank-details">
         <h4>🏦 Bank Transfer Details</h4>
         <div class="bank-row"><span class="bank-label">Bank Name:</span><span class="bank-value">Opay</span></div>
@@ -577,7 +527,7 @@ footer{background:#0f1f17;color:#fff;padding:2.5rem 1.2rem 1.5rem}
       <div id="co-items"></div>
       <div style="border-top:1px solid var(--border);margin-top:.8rem;padding-top:.8rem">
         <div style="display:flex;justify-content:space-between;font-size:.9rem;margin-bottom:.4rem"><span>Subtotal</span><span id="co-subtotal">₦0</span></div>
-        <div style="display:flex;justify-content:space-between;font-size:.9rem;margin-bottom:.4rem"><span>Delivery</span><span style="color:var(--green)">Calculated after order</span></div>
+        <div style="display:flex;justify-content:space-between;font-size:.9rem;margin-bottom:.4rem"><span>Delivery</span><span id="co-delivery-display" style="color:var(--green)">Select state above</span></div>
         <div style="display:flex;justify-content:space-between;font-weight:700;font-size:1rem;margin-top:.5rem;padding-top:.5rem;border-top:1px solid var(--border)"><span>Total</span><span id="co-total2">₦0</span></div>
       </div>
     </div>
@@ -592,9 +542,7 @@ footer{background:#0f1f17;color:#fff;padding:2.5rem 1.2rem 1.5rem}
     <div class="success-icon">🎉</div>
     <h2>Order Placed Successfully!</h2>
     <p>Thank you for your order! We have received your payment proof and will confirm your order shortly.</p>
-    <div class="order-ref">
-      Your Order Reference: <br><strong id="order-ref-num">#SKS-000000</strong>
-    </div>
+    <div class="order-ref">Your Order Reference:<br><strong id="order-ref-num">#SKS-000000</strong></div>
     <p style="font-size:.85rem;color:var(--muted);margin-bottom:1.5rem">We will contact you on <strong id="success-phone"></strong> to confirm delivery details.</p>
     <button class="btn-primary" onclick="showPage('home-page')" style="margin:0 auto;display:inline-flex">Continue Shopping</button>
   </div>
@@ -652,30 +600,9 @@ footer{background:#0f1f17;color:#fff;padding:2.5rem 1.2rem 1.5rem}
   <div class="blog-page">
     <div class="section-tag">Tips & Advice</div>
     <div class="section-title" style="margin-bottom:1.2rem">Skin Savvy Blog</div>
-    <div class="blog-card">
-      <div class="blog-img">🌿</div>
-      <div class="blog-info">
-        <div class="blog-tag">Skincare Tips</div>
-        <h3>5 Benefits of Shea Butter for Your Skin</h3>
-        <p>Discover why shea butter is the ultimate natural moisturizer for all skin types...</p>
-      </div>
-    </div>
-    <div class="blog-card">
-      <div class="blog-img">💆</div>
-      <div class="blog-info">
-        <div class="blog-tag">Hair Care</div>
-        <h3>How to Use Hair Growth Oil for Best Results</h3>
-        <p>Learn the right way to apply our hair growth oil for maximum results...</p>
-      </div>
-    </div>
-    <div class="blog-card">
-      <div class="blog-img">✨</div>
-      <div class="blog-info">
-        <div class="blog-tag">Natural Beauty</div>
-        <h3>Natural Ingredients That Transform Your Skin</h3>
-        <p>Explore the power of herbal ingredients in modern skincare routines...</p>
-      </div>
-    </div>
+    <div class="blog-card"><div class="blog-img">🌿</div><div class="blog-info"><div class="blog-tag">Skincare Tips</div><h3>5 Benefits of Shea Butter for Your Skin</h3><p>Discover why shea butter is the ultimate natural moisturizer for all skin types...</p></div></div>
+    <div class="blog-card"><div class="blog-img">💆</div><div class="blog-info"><div class="blog-tag">Hair Care</div><h3>How to Use Hair Growth Oil for Best Results</h3><p>Learn the right way to apply our hair growth oil for maximum results...</p></div></div>
+    <div class="blog-card"><div class="blog-img">✨</div><div class="blog-info"><div class="blog-tag">Natural Beauty</div><h3>Natural Ingredients That Transform Your Skin</h3><p>Explore the power of herbal ingredients in modern skincare routines...</p></div></div>
   </div>
 </div>
 
@@ -693,7 +620,6 @@ footer{background:#0f1f17;color:#fff;padding:2.5rem 1.2rem 1.5rem}
       <button class="admin-tab" onclick="switchAdminTab('add-product')">Add Product</button>
     </div>
     <div class="admin-content">
-      <!-- DASHBOARD TAB -->
       <div id="admin-dashboard">
         <div class="admin-stats">
           <div class="stat-card"><div class="stat-num" id="stat-products">0</div><div class="stat-label">Total Products</div></div>
@@ -704,23 +630,14 @@ footer{background:#0f1f17;color:#fff;padding:2.5rem 1.2rem 1.5rem}
         <div class="admin-section-title">Recent Orders</div>
         <div id="recent-orders-list"><div class="loading"><div class="spinner"></div></div></div>
       </div>
-
-      <!-- PRODUCTS TAB -->
       <div id="admin-products" style="display:none">
-        <div class="admin-section-title">
-          All Products
-          <button class="btn-add" onclick="switchAdminTab('add-product')">+ Add Product</button>
-        </div>
+        <div class="admin-section-title">All Products<button class="btn-add" onclick="switchAdminTab('add-product')">+ Add Product</button></div>
         <div id="admin-products-list"><div class="loading"><div class="spinner"></div></div></div>
       </div>
-
-      <!-- ORDERS TAB -->
       <div id="admin-orders" style="display:none">
         <div class="admin-section-title">All Orders</div>
         <div id="admin-orders-list"><div class="loading"><div class="spinner"></div></div></div>
       </div>
-
-      <!-- ADD PRODUCT TAB -->
       <div id="admin-add-product" style="display:none">
         <div class="admin-section-title" id="add-product-title">Add New Product</div>
         <div class="form-section">
@@ -794,7 +711,6 @@ footer{background:#0f1f17;color:#fff;padding:2.5rem 1.2rem 1.5rem}
   </div>
 </div>
 
-<!-- FOOTER -->
 <footer>
   <div class="footer-logo">SKIN SAVVY</div>
   <div class="footer-tagline">Natural Skin & Hair Care Essentials<br>Glow Naturally, Stay Skin Savvy 🌿</div>
@@ -808,40 +724,35 @@ footer{background:#0f1f17;color:#fff;padding:2.5rem 1.2rem 1.5rem}
   <div class="footer-section" style="margin-top:1.5rem">
     <h4>Connect With Us</h4>
     <div class="footer-social">
-      <a href="https://tiktok.com/@savvy7984" target="_blank" class="social-icon" title="TikTok">TK</a>
-      <a href="https://wa.me/2347034457599" target="_blank" class="social-icon" title="WhatsApp">WA</a>
+      <a href="https://tiktok.com/@savvy7984" target="_blank" class="social-icon">TK</a>
+      <a href="https://wa.me/2347034457599" target="_blank" class="social-icon">WA</a>
     </div>
-    <div class="footer-contact">
-      📍 Onitsha, Anambra State<br>
-      📞 07034457599<br>
-      ✉️ akhajememiracle1@gmail.com
-    </div>
+    <div class="footer-contact">📍 Onitsha, Anambra State<br>📞 07034457599<br>✉️ akhajememiracle1@gmail.com</div>
   </div>
   <div class="footer-bottom">© 2026 Skin Savvy. All Rights Reserved.</div>
 </footer>
 
-<!-- WHATSAPP -->
-<a href="https://wa.me/2347034457599?text=Hello! I would like to order from Skin Savvy." target="_blank" class="whatsapp-btn" title="Chat on WhatsApp">
+<a href="https://wa.me/2347034457599?text=Hello! I would like to order from Skin Savvy." target="_blank" class="whatsapp-btn">
   <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
 </a>
 
-<!-- TOAST -->
 <div class="toast" id="toast"></div>
 
 <script>
 // ============================================================
-// SUPABASE SETUP
+// SUPABASE
 // ============================================================
 const SUPABASE_URL = 'https://bxnkzvybrqbplzgvymbo.supabase.co';
 const SUPABASE_KEY = 'sb_publishable_gKZ6D34gnLDXQjUcc5ipaw_uC3q47yH';
-const { createClient } = supabase;
-const db = createClient(SUPABASE_URL, SUPABASE_KEY);
-
 const ADMIN_PASSWORD = 'SkinSavvy@Admin2026';
 
-// ============================================================
-// STATE
-// ============================================================
+let db = null;
+try {
+  if (typeof supabase !== 'undefined') {
+    db = supabase.createClient(SUPABASE_URL, SUPABASE_KEY);
+  }
+} catch(e) { db = null; }
+
 let cart = JSON.parse(localStorage.getItem('ss_cart') || '[]');
 let allProducts = [];
 let currentCategory = 'All';
@@ -852,43 +763,48 @@ let isAdmin = false;
 // INIT
 // ============================================================
 async function init() {
-  setupSupabaseTables();
   updateCartBadge();
+  await loadAllProducts();
   loadFeaturedProducts();
-  loadShopProducts();
+  renderShopGrid(allProducts);
+  renderAuthPage();
 
-  // Auth state
-  const { data: { session } } = await db.auth.getSession();
-  if (session) {
-    currentUser = session.user;
-    renderAccountPage();
-  } else {
-    renderAuthPage();
-  }
-
-  db.auth.onAuthStateChange((event, session) => {
-    currentUser = session?.user || null;
-    if (document.getElementById('account-page').classList.contains('active')) {
-      if (currentUser) renderAccountPage();
-      else renderAuthPage();
-    }
-  });
+  if (!db) return;
+  try {
+    const { data: { session } } = await db.auth.getSession();
+    if (session) currentUser = session.user;
+    db.auth.onAuthStateChange((event, session) => {
+      currentUser = session?.user || null;
+    });
+  } catch(e) {}
 }
 
-async function setupSupabaseTables() {
-  // Try to create tables if they don't exist
-  try {
-    await db.from('products').select('id').limit(1);
-  } catch(e) {
-    console.log('Tables may need to be created');
+async function loadAllProducts() {
+  if (db) {
+    try {
+      const { data, error } = await db.from('product').select('*').order('created_at', { ascending: false });
+      if (!error && data && data.length > 0) {
+        allProducts = data;
+        return;
+      }
+    } catch(e) {}
   }
+  allProducts = getDemoProducts();
 }
 
 // ============================================================
-// NAVIGATION
+// NAVIGATION  ← FIXED
 // ============================================================
 function showPage(pageId) {
   document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
+
+  // Admin guard — redirect to login if not authenticated
+  if (pageId === 'admin-page' && !isAdmin) {
+    document.getElementById('admin-login-page').classList.add('active');
+    window.scrollTo(0, 0);
+    return;
+  }
+
   document.getElementById(pageId).classList.add('active');
   window.scrollTo(0, 0);
 
@@ -898,10 +814,7 @@ function showPage(pageId) {
     if (currentUser) renderAccountPage();
     else renderAuthPage();
   }
-  if (pageId === 'admin-page') {
-    if (isAdmin) loadAdminDashboard();
-    else showPage('admin-login-page');
-  }
+  if (pageId === 'admin-page') loadAdminDashboard();
 }
 
 function toggleMenu() {
@@ -915,32 +828,6 @@ function toggleSubMenu(id) {
 // ============================================================
 // PRODUCTS
 // ============================================================
-async function loadFeaturedProducts() {
-  const { data, error } = await db.from('products').select('*').eq('featured', true).limit(4);
-  const container = document.getElementById('featured-products');
-
-  if (error || !data || data.length === 0) {
-    // Show demo products if no products yet
-    container.innerHTML = getDemoProducts().slice(0,4).map(renderProductCard).join('');
-    return;
-  }
-  allProducts = data;
-  container.innerHTML = data.map(renderProductCard).join('');
-}
-
-async function loadShopProducts() {
-  const { data, error } = await db.from('products').select('*').order('created_at', { ascending: false });
-  const grid = document.getElementById('shop-grid');
-
-  if (error || !data || data.length === 0) {
-    allProducts = getDemoProducts();
-    renderShopGrid(allProducts);
-    return;
-  }
-  allProducts = data;
-  renderShopGrid(allProducts);
-}
-
 function getDemoProducts() {
   return [
     { id: 'demo1', name: 'Savvy Shea Butter', category: 'Shea Butter', price: 5000, old_price: 7000, description: 'Pure, natural shea butter that deeply moisturizes and nourishes your skin for a radiant glow.', emoji: '🧴', featured: true },
@@ -948,7 +835,7 @@ function getDemoProducts() {
     { id: 'demo3', name: 'Hair Growth Oil', category: 'Hair Care', price: 6000, old_price: 8000, description: 'Powerful herbal hair growth oil that stimulates hair follicles and promotes healthy hair growth.', emoji: '💆', featured: true },
     { id: 'demo4', name: 'Savvy Herbal Soap', category: 'Herbal', price: 2500, old_price: null, description: 'Natural herbal soap that cleanses, purifies and treats various skin conditions.', emoji: '🌱', featured: true },
     { id: 'demo5', name: 'After Shave Scrub & Oil', category: 'After Shave', price: 5500, old_price: null, description: 'Soothing after shave scrub and oil combo that prevents razor bumps and irritation.', emoji: '🧔', featured: false },
-    { id: 'demo6', name: 'Herbal Hydrating Hair Growth Leave-in Spray', category: 'Hair Care', price: 4000, old_price: null, description: 'Lightweight leave-in spray that hydrates and promotes hair growth throughout the day.', emoji: '💧', featured: false },
+    { id: 'demo6', name: 'Hair Growth Leave-in Spray', category: 'Hair Care', price: 4000, old_price: null, description: 'Lightweight leave-in spray that hydrates and promotes hair growth throughout the day.', emoji: '💧', featured: false },
     { id: 'demo7', name: 'Savvy Glow Oil', category: 'Face & Body', price: 5000, old_price: null, description: 'Luxurious body oil that gives your skin a beautiful, healthy glow.', emoji: '🌟', featured: false },
     { id: 'demo8', name: 'Stretch Mark Oil', category: 'Face & Body', price: 6500, old_price: 8000, description: 'Powerful oil that reduces the appearance of stretch marks and improves skin elasticity.', emoji: '💚', featured: false },
     { id: 'demo9', name: 'Ude Aki', category: 'Herbal', price: 3500, old_price: null, description: 'Traditional palm kernel oil with powerful skin healing and moisturizing properties.', emoji: '🌿', featured: false },
@@ -960,7 +847,7 @@ function getDemoProducts() {
 
 function renderProductCard(p) {
   const imgContent = p.image_url
-    ? `<img src="${p.image_url}" style="width:100%;height:160px;object-fit:cover" alt="${p.name}" onerror="this.parentElement.innerHTML='<div style=width:100%;height:160px;background:linear-gradient(135deg,#d8f3dc,#b7e4c7);display:flex;align-items:center;justify-content:center;font-size:2.5rem>${p.emoji||'🌿'}</div>'">`
+    ? `<img src="${p.image_url}" style="width:100%;height:160px;object-fit:cover" alt="${p.name}" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><div class="product-img-placeholder" style="display:none">${p.emoji||'🌿'}</div>`
     : `<div class="product-img-placeholder">${p.emoji || '🌿'}</div>`;
 
   return `<div class="product-card" onclick="showProductDetail('${p.id}')">
@@ -977,6 +864,13 @@ function renderProductCard(p) {
   </div>`;
 }
 
+function loadFeaturedProducts() {
+  const container = document.getElementById('featured-products');
+  const featured = allProducts.filter(p => p.featured).slice(0, 4);
+  const display = featured.length > 0 ? featured : allProducts.slice(0, 4);
+  container.innerHTML = display.map(renderProductCard).join('');
+}
+
 function renderShopGrid(products) {
   const grid = document.getElementById('shop-grid');
   const count = document.getElementById('product-count');
@@ -991,39 +885,28 @@ function renderShopGrid(products) {
 
 function filterByCategory(cat) {
   currentCategory = cat;
-  const btns = document.querySelectorAll('.filter-btn');
-  btns.forEach(b => { b.classList.toggle('active', b.textContent.trim() === cat || (cat === 'All' && b.textContent.trim() === 'All')); });
-
-  const title = document.getElementById('shop-title');
-  const breadcrumb = document.getElementById('breadcrumb-cat');
-  if (cat === 'All') {
-    title.textContent = 'ALL PRODUCTS';
-    breadcrumb.textContent = 'All Products';
-    renderShopGrid(allProducts);
-  } else {
-    title.textContent = cat.toUpperCase();
-    breadcrumb.textContent = cat;
-    renderShopGrid(allProducts.filter(p => p.category === cat));
-  }
+  document.querySelectorAll('.filter-btn').forEach(b => {
+    b.classList.toggle('active', b.textContent.trim() === cat || (cat === 'All' && b.textContent.trim() === 'All'));
+  });
+  document.getElementById('shop-title').textContent = cat === 'All' ? 'ALL PRODUCTS' : cat.toUpperCase();
+  document.getElementById('breadcrumb-cat').textContent = cat === 'All' ? 'All Products' : cat;
+  renderShopGrid(cat === 'All' ? allProducts : allProducts.filter(p => p.category === cat));
 }
 
 function sortProducts(val) {
-  let sorted = [...allProducts];
-  if (currentCategory !== 'All') sorted = sorted.filter(p => p.category === currentCategory);
+  let sorted = currentCategory === 'All' ? [...allProducts] : allProducts.filter(p => p.category === currentCategory);
   if (val === 'price-low') sorted.sort((a,b) => a.price - b.price);
   else if (val === 'price-high') sorted.sort((a,b) => b.price - a.price);
   renderShopGrid(sorted);
 }
 
 function showProductDetail(id) {
-  const p = allProducts.find(x => x.id == id || x.id === id);
+  const p = allProducts.find(x => String(x.id) === String(id));
   if (!p) return;
   document.getElementById('detail-breadcrumb').textContent = p.name;
-
   const imgContent = p.image_url
     ? `<img src="${p.image_url}" style="width:100%;height:280px;object-fit:cover" alt="${p.name}">`
     : `<div class="product-detail-img-placeholder">${p.emoji || '🌿'}</div>`;
-
   document.getElementById('product-detail-content').innerHTML = `
     ${imgContent}
     <div class="product-detail-info">
@@ -1041,9 +924,8 @@ function showProductDetail(id) {
         <button class="qty-btn" onclick="changeQty(1)">+</button>
       </div>
       <button class="btn-add-cart" onclick="addToCartDetail('${p.id}')">🛒 Add to Cart</button>
-      <button class="btn-outline-white" style="width:100%;color:var(--text);border-color:var(--border);border-radius:12px;padding:1rem;font-family:inherit;font-size:.95rem;cursor:pointer" onclick="showPage('shop-page')">← Continue Shopping</button>
-    </div>
-  `;
+      <button style="width:100%;background:none;border:1.5px solid var(--border);color:var(--text);border-radius:12px;padding:1rem;font-family:inherit;font-size:.95rem;cursor:pointer" onclick="showPage('shop-page')">← Continue Shopping</button>
+    </div>`;
   showPage('product-detail-page');
 }
 
@@ -1056,8 +938,6 @@ function changeQty(delta) {
 
 function addToCartDetail(id) {
   const qty = parseInt(document.getElementById('detail-qty').textContent);
-  const p = allProducts.find(x => x.id == id);
-  if (!p) return;
   for (let i = 0; i < qty; i++) addToCart(id);
 }
 
@@ -1065,11 +945,11 @@ function addToCartDetail(id) {
 // CART
 // ============================================================
 function addToCart(id) {
-  const p = allProducts.find(x => x.id == id || x.id === id);
+  const p = allProducts.find(x => String(x.id) === String(id));
   if (!p) return;
-  const existing = cart.find(i => i.id == id);
+  const existing = cart.find(i => String(i.id) === String(id));
   if (existing) existing.qty++;
-  else cart.push({ id: p.id, name: p.name, price: p.price, emoji: p.emoji || '🌿', image_url: p.image_url, qty: 1 });
+  else cart.push({ id: p.id, name: p.name, price: p.price, emoji: p.emoji || '🌿', image_url: p.image_url || null, qty: 1 });
   saveCart();
   showToast(`${p.name} added to cart! 🛒`);
 }
@@ -1101,17 +981,17 @@ function renderCart() {
           <div class="cart-item-name">${item.name}</div>
           <div class="cart-item-price">₦${Number(item.price).toLocaleString()}</div>
           <div class="cart-item-qty">
-            <button class="cart-qty-btn" onclick="updateCartQty(${idx}, -1)">−</button>
+            <button class="cart-qty-btn" onclick="updateCartQty(${idx},-1)">−</button>
             <span>${item.qty}</span>
-            <button class="cart-qty-btn" onclick="updateCartQty(${idx}, 1)">+</button>
-            <button class="cart-remove" onclick="removeCartItem(${idx})" style="margin-left:.5rem;background:none;border:none;color:#e74c3c;cursor:pointer;font-size:.8rem">Remove</button>
+            <button class="cart-qty-btn" onclick="updateCartQty(${idx},1)">+</button>
+            <button onclick="removeCartItem(${idx})" style="margin-left:.5rem;background:none;border:none;color:#e74c3c;cursor:pointer;font-size:.8rem">Remove</button>
           </div>
         </div>
         <div style="font-weight:700;font-size:.9rem;color:var(--green)">₦${Number(item.price * item.qty).toLocaleString()}</div>
       </div>`).join('')}
     <div class="cart-summary">
       <div class="cart-summary-row"><span>Subtotal (${cart.reduce((s,i)=>s+i.qty,0)} items)</span><span>₦${total.toLocaleString()}</span></div>
-      <div class="cart-summary-row"><span>Delivery</span><span style="color:var(--green)">Calculated after order</span></div>
+      <div class="cart-summary-row"><span>Delivery</span><span style="color:var(--green)">Calculated at checkout</span></div>
       <div class="cart-summary-row total"><span>Total</span><span>₦${total.toLocaleString()}</span></div>
       <button class="btn-checkout" onclick="showPage('checkout-page')">Proceed to Checkout →</button>
       <button onclick="showPage('shop-page')" style="width:100%;background:none;border:1.5px solid var(--border);border-radius:12px;padding:.8rem;font-family:inherit;font-size:.9rem;cursor:pointer;margin-top:.5rem">← Continue Shopping</button>
@@ -1135,16 +1015,62 @@ function removeCartItem(idx) {
 // CHECKOUT
 // ============================================================
 function renderCheckout() {
-  const total = cart.reduce((s, i) => s + i.price * i.qty, 0);
-  document.getElementById('co-total').textContent = `₦${total.toLocaleString()}`;
-  document.getElementById('co-total2').textContent = `₦${total.toLocaleString()}`;
-  document.getElementById('co-subtotal').textContent = `₦${total.toLocaleString()}`;
+  const subtotal = cart.reduce((s, i) => s + i.price * i.qty, 0);
+  document.getElementById('co-subtotal').textContent = '₦' + subtotal.toLocaleString();
+  document.getElementById('co-total').textContent = '₦' + subtotal.toLocaleString();
+  document.getElementById('co-total2').textContent = '₦' + subtotal.toLocaleString();
+  document.getElementById('co-delivery-display').textContent = 'Select state above';
   document.getElementById('co-items').innerHTML = cart.map(i =>
-    `<div style="display:flex;justify-content:space-between;font-size:.85rem;margin-bottom:.4rem"><span>${i.name} × ${i.qty}</span><span>₦${(i.price * i.qty).toLocaleString()}</span></div>`
+    `<div style="display:flex;justify-content:space-between;font-size:.85rem;margin-bottom:.4rem">
+      <span>${i.name} × ${i.qty}</span>
+      <span>₦${(i.price * i.qty).toLocaleString()}</span>
+    </div>`
   ).join('');
-  if (currentUser) {
-    document.getElementById('co-email').value = currentUser.email || '';
+  if (currentUser) document.getElementById('co-email').value = currentUser.email || '';
+  // Reset delivery fee display
+  document.getElementById('delivery-fee-box').style.display = 'none';
+  document.getElementById('co-state').value = '';
+}
+
+// ============================================================
+// DELIVERY FEE  ← FIXED
+// ============================================================
+function getDeliveryFee(state) {
+  if (!state) return 0;
+  if (state === 'Onitsha') return 2500;
+  if (state === 'Anambra') return 3000;
+  if (['Imo','Enugu','Ebonyi','Cross River','Abia'].includes(state)) return 3000;
+  if (state === 'Rivers') return 3000;
+  if (state === 'Lagos' || state === 'Abuja') return 6000;
+  return 3000;
+}
+
+function calculateDelivery() {
+  var state = document.getElementById('co-state').value;
+  if (!state) return;
+
+  var fee = getDeliveryFee(state);
+  var subtotal = cart.reduce(function(s, i) { return s + i.price * i.qty; }, 0);
+  var grandTotal = subtotal + fee;
+
+  // Show the delivery fee box under the state selector
+  var box = document.getElementById('delivery-fee-box');
+  if (box) {
+    box.style.display = 'block';
+    document.getElementById('delivery-fee-display').textContent = '₦' + fee.toLocaleString();
   }
+
+  // Update the order summary section
+  var coDisplay = document.getElementById('co-delivery-display');
+  if (coDisplay) coDisplay.textContent = '₦' + fee.toLocaleString();
+
+  // Update the total amount to pay (bank transfer)
+  var t1 = document.getElementById('co-total');
+  if (t1) t1.textContent = '₦' + grandTotal.toLocaleString();
+
+  // Update the order summary total
+  var t2 = document.getElementById('co-total2');
+  if (t2) t2.textContent = '₦' + grandTotal.toLocaleString();
 }
 
 function previewProof(input) {
@@ -1167,63 +1093,45 @@ async function placeOrder() {
   const state = document.getElementById('co-state').value.trim();
   const proofFile = document.getElementById('proof-upload').files[0];
 
-  if (!name || !phone || !address || !city || !state) {
-    showToast('❌ Please fill in all required fields!'); return;
-  }
-  if (!proofFile) {
-    showToast('❌ Please upload your payment proof!'); return;
-  }
+  if (!name || !phone || !address || !city || !state) { showToast('❌ Please fill in all required fields!'); return; }
+  if (!proofFile) { showToast('❌ Please upload your payment proof!'); return; }
 
-  const total = cart.reduce((s, i) => s + i.price * i.qty, 0);
+  const total = cart.reduce((s, i) => s + i.price * i.qty, 0) + getDeliveryFee(state);
   const ref = 'SKS-' + Date.now().toString().slice(-6);
 
   try {
-    // Upload proof image to Supabase storage
     let proofUrl = '';
-    try {
-      const fileExt = proofFile.name.split('.').pop();
-      const fileName = `${ref}.${fileExt}`;
-      const { data: uploadData, error: uploadError } = await db.storage.from('payment-proofs').upload(fileName, proofFile);
-      if (!uploadError && uploadData) {
-        const { data: urlData } = db.storage.from('payment-proofs').getPublicUrl(fileName);
-        proofUrl = urlData.publicUrl;
-      }
-    } catch(e) { console.log('Storage not set up yet, saving without proof URL'); }
+    if (db) {
+      try {
+        const ext = proofFile.name.split('.').pop();
+        const { data: uploadData } = await db.storage.from('payment-proofs').upload(`${ref}.${ext}`, proofFile);
+        if (uploadData) {
+          const { data: urlData } = db.storage.from('payment-proofs').getPublicUrl(`${ref}.${ext}`);
+          proofUrl = urlData.publicUrl;
+        }
+      } catch(e) {}
 
-    // Save order to database
-    const orderData = {
-      ref,
-      customer_name: name,
-      customer_phone: phone,
-      customer_email: document.getElementById('co-email').value,
-      delivery_address: `${address}, ${city}, ${state}`,
-      notes: document.getElementById('co-notes').value,
-      items: JSON.stringify(cart),
-      total,
-      proof_url: proofUrl,
-      status: 'pending',
-      created_at: new Date().toISOString()
-    };
-
-    const { error } = await db.from('orders').insert([orderData]);
-    if (error) throw error;
-
-    // Success
+      const orderData = {
+        ref, customer_name: name, customer_phone: phone,
+        customer_email: document.getElementById('co-email').value,
+        delivery_address: `${address}, ${city}, ${state}`,
+        notes: document.getElementById('co-notes').value,
+        items: JSON.stringify(cart), total, proof_url: proofUrl,
+        status: 'pending', created_at: new Date().toISOString()
+      };
+      await db.from('orders').insert([orderData]);
+    }
     cart = [];
     saveCart();
     document.getElementById('order-ref-num').textContent = `#${ref}`;
     document.getElementById('success-phone').textContent = phone;
     showPage('success-page');
-
   } catch(err) {
-    // If tables don't exist yet, still show success with local confirmation
-    console.log('Order error:', err);
     cart = [];
     saveCart();
     document.getElementById('order-ref-num').textContent = `#${ref}`;
     document.getElementById('success-phone').textContent = phone;
     showPage('success-page');
-    showToast('⚠️ Order saved locally. Please set up database tables.');
   }
 }
 
@@ -1261,15 +1169,14 @@ function toggleAuthMode() {
 }
 
 async function handleAuth() {
+  if (!db) { showToast('❌ Database not connected'); return; }
   const email = document.getElementById('auth-email').value.trim();
   const password = document.getElementById('auth-password').value;
-
   if (!email || !password) { showToast('❌ Please fill in all fields!'); return; }
-
   if (authMode === 'signup') {
     const { error } = await db.auth.signUp({ email, password });
     if (error) { showToast('❌ ' + error.message); return; }
-    showToast('✅ Account created! Please check your email to verify.');
+    showToast('✅ Account created! Please check your email.');
   } else {
     const { data, error } = await db.auth.signInWithPassword({ email, password });
     if (error) { showToast('❌ ' + error.message); return; }
@@ -1283,26 +1190,14 @@ function renderAccountPage() {
     <div style="padding:1.5rem 1.2rem">
       <div style="display:flex;align-items:center;gap:.8rem;margin-bottom:1.5rem">
         <div style="width:50px;height:50px;background:var(--green-light);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:1.4rem">👤</div>
-        <div>
-          <div style="font-weight:600">${currentUser.email}</div>
-          <div style="font-size:.8rem;color:var(--muted)">Skin Savvy Member</div>
-        </div>
+        <div><div style="font-weight:600">${currentUser.email}</div><div style="font-size:.8rem;color:var(--muted)">Skin Savvy Member</div></div>
       </div>
       <div style="display:grid;gap:.8rem">
         <div style="background:#fff;border-radius:12px;padding:1rem;border:1px solid var(--border);display:flex;align-items:center;gap:.8rem;cursor:pointer" onclick="showPage('shop-page')">
-          <span style="font-size:1.3rem">🛍️</span>
-          <div><div style="font-weight:500;font-size:.9rem">My Orders</div><div style="font-size:.78rem;color:var(--muted)">View your order history</div></div>
-          <span style="margin-left:auto;color:var(--muted)">›</span>
+          <span style="font-size:1.3rem">🛍️</span><div><div style="font-weight:500;font-size:.9rem">Shop Products</div><div style="font-size:.78rem;color:var(--muted)">Browse our products</div></div><span style="margin-left:auto;color:var(--muted)">›</span>
         </div>
-        <div style="background:#fff;border-radius:12px;padding:1rem;border:1px solid var(--border);display:flex;align-items:center;gap:.8rem;cursor:pointer">
-          <span style="font-size:1.3rem">👤</span>
-          <div><div style="font-weight:500;font-size:.9rem">My Profile</div><div style="font-size:.78rem;color:var(--muted)">Update your information</div></div>
-          <span style="margin-left:auto;color:var(--muted)">›</span>
-        </div>
-        <div style="background:#fff;border-radius:12px;padding:1rem;border:1px solid var(--border);display:flex;align-items:center;gap:.8rem;cursor:pointer" onclick="showPage('shop-page')">
-          <span style="font-size:1.3rem">🌿</span>
-          <div><div style="font-weight:500;font-size:.9rem">Continue Shopping</div><div style="font-size:.78rem;color:var(--muted)">Browse our products</div></div>
-          <span style="margin-left:auto;color:var(--muted)">›</span>
+        <div style="background:#fff;border-radius:12px;padding:1rem;border:1px solid var(--border);display:flex;align-items:center;gap:.8rem;cursor:pointer" onclick="showPage('cart-page')">
+          <span style="font-size:1.3rem">🛒</span><div><div style="font-weight:500;font-size:.9rem">My Cart</div><div style="font-size:.78rem;color:var(--muted)">View your cart</div></div><span style="margin-left:auto;color:var(--muted)">›</span>
         </div>
       </div>
       <button onclick="logout()" style="width:100%;background:none;border:1.5px solid #e74c3c;color:#e74c3c;border-radius:12px;padding:.85rem;font-family:inherit;font-size:.9rem;cursor:pointer;margin-top:1.5rem">Logout</button>
@@ -1310,21 +1205,25 @@ function renderAccountPage() {
 }
 
 async function logout() {
-  await db.auth.signOut();
+  if (db) await db.auth.signOut();
   currentUser = null;
   renderAuthPage();
   showToast('Logged out successfully');
 }
 
 // ============================================================
-// ADMIN
+// ADMIN  ← FIXED
 // ============================================================
 function adminLogin() {
   const pw = document.getElementById('admin-password').value;
   if (pw === ADMIN_PASSWORD) {
     isAdmin = true;
-    showPage('admin-page');
+    // Directly switch pages without calling showPage to avoid the guard loop
+    document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
+    document.getElementById('admin-page').classList.add('active');
+    window.scrollTo(0, 0);
     loadAdminDashboard();
+    showToast('✅ Welcome to Admin Panel!');
   } else {
     showToast('❌ Incorrect password!');
   }
@@ -1336,104 +1235,103 @@ function adminLogout() {
 }
 
 function switchAdminTab(tab) {
-  document.querySelectorAll('.admin-tab').forEach(t => t.classList.remove('active'));
-  document.querySelectorAll('[id^="admin-"]').forEach(d => {
-    if (!d.classList.contains('admin-page') && !d.classList.contains('admin-header') && !d.classList.contains('admin-nav') && !d.classList.contains('admin-content') && !d.classList.contains('admin-tab')) {
-      d.style.display = 'none';
-    }
+  ['admin-dashboard','admin-products','admin-orders','admin-add-product'].forEach(id => {
+    var el = document.getElementById(id);
+    if (el) el.style.display = 'none';
   });
-
-  const tabs = { 'dashboard': 'admin-dashboard', 'products': 'admin-products', 'orders': 'admin-orders', 'add-product': 'admin-add-product' };
-  if (tabs[tab]) {
-    document.getElementById(tabs[tab]).style.display = 'block';
-    const tabEl = document.querySelectorAll('.admin-tab');
-    const tabIdx = Object.keys(tabs).indexOf(tab);
-    if (tabEl[tabIdx]) tabEl[tabIdx].classList.add('active');
-  }
-
+  document.querySelectorAll('.admin-tab').forEach(t => t.classList.remove('active'));
+  const tabMap = { dashboard: 'admin-dashboard', products: 'admin-products', orders: 'admin-orders', 'add-product': 'admin-add-product' };
+  const tabIndex = ['dashboard','products','orders','add-product'].indexOf(tab);
+  var showEl = document.getElementById(tabMap[tab]);
+  if (showEl) showEl.style.display = 'block';
+  var tabs = document.querySelectorAll('.admin-tab');
+  if (tabs[tabIndex]) tabs[tabIndex].classList.add('active');
   if (tab === 'dashboard') loadAdminDashboard();
-  if (tab === 'products') loadAdminProducts();
-  if (tab === 'orders') loadAdminOrders();
+  else if (tab === 'products') loadAdminProducts();
+  else if (tab === 'orders') loadAdminOrders();
+  else if (tab === 'add-product') cancelEdit();
 }
 
 async function loadAdminDashboard() {
-  const [{ data: products }, { data: orders }] = await Promise.all([
-    db.from('products').select('*'),
-    db.from('orders').select('*')
-  ]);
-
-  const prods = products || allProducts || [];
-  const ords = orders || [];
-  const pending = ords.filter(o => o.status === 'pending').length;
-  const revenue = ords.filter(o => o.status !== 'cancelled').reduce((s, o) => s + (o.total || 0), 0);
-
-  document.getElementById('stat-products').textContent = prods.length;
-  document.getElementById('stat-orders').textContent = ords.length;
+  let products = allProducts.length > 0 ? allProducts : getDemoProducts();
+  let orders = [];
+  if (db) {
+    try {
+      const [pr, or] = await Promise.all([
+        db.from('product').select('*'),
+        db.from('orders').select('*')
+      ]);
+      if (pr.data && pr.data.length > 0) products = pr.data;
+      orders = or.data || [];
+    } catch(e) {}
+  }
+  const pending = orders.filter(o => o.status === 'pending').length;
+  const revenue = orders.filter(o => o.status !== 'cancelled').reduce((s, o) => s + (o.total || 0), 0);
+  document.getElementById('stat-products').textContent = products.length;
+  document.getElementById('stat-orders').textContent = orders.length;
   document.getElementById('stat-pending').textContent = pending;
-  document.getElementById('stat-revenue').textContent = `₦${revenue.toLocaleString()}`;
-
-  const recent = ords.slice(-5).reverse();
+  document.getElementById('stat-revenue').textContent = '₦' + revenue.toLocaleString();
+  const recent = orders.slice(-5).reverse();
   document.getElementById('recent-orders-list').innerHTML = recent.length === 0
     ? '<div class="no-products">No orders yet</div>'
     : `<div style="overflow-x:auto"><table class="admin-table"><thead><tr><th>Ref</th><th>Customer</th><th>Total</th><th>Status</th><th>Action</th></tr></thead><tbody>
-    ${recent.map(o => `<tr>
-      <td>#${o.ref}</td>
-      <td>${o.customer_name}</td>
-      <td>₦${Number(o.total).toLocaleString()}</td>
-      <td><span class="status-badge status-${o.status}">${o.status}</span></td>
-      <td><button class="action-btn edit-btn" onclick="viewOrder('${o.ref}')">View</button></td>
-    </tr>`).join('')}
+    ${recent.map(o => `<tr><td>#${o.ref}</td><td>${o.customer_name}</td><td>₦${Number(o.total).toLocaleString()}</td><td><span class="status-badge status-${o.status}">${o.status}</span></td><td><button class="action-btn edit-btn" onclick="viewOrder('${o.ref}')">View</button></td></tr>`).join('')}
     </tbody></table></div>`;
 }
 
 async function loadAdminProducts() {
-  const { data, error } = await db.from('products').select('*').order('created_at', { ascending: false });
-  const prods = data || allProducts;
-  document.getElementById('admin-products-list').innerHTML = prods.length === 0
-    ? '<div class="no-products">No products yet. Add your first product!</div>'
-    : `<div style="overflow-x:auto"><table class="admin-table"><thead><tr><th>Name</th><th>Category</th><th>Price</th><th>Actions</th></tr></thead><tbody>
-    ${prods.map(p => `<tr>
-      <td>${p.name}</td>
-      <td>${p.category}</td>
-      <td>₦${Number(p.price).toLocaleString()}</td>
-      <td>
-        <button class="action-btn edit-btn" onclick="editProduct('${p.id}')">Edit</button>
-        <button class="action-btn delete-btn" onclick="deleteProduct('${p.id}')">Delete</button>
-      </td>
-    </tr>`).join('')}
-    </tbody></table></div>`;
+  var container = document.getElementById('admin-products-list');
+  if (!container) return;
+  container.innerHTML = '<div class="loading"><div class="spinner"></div>Loading products...</div>';
+  var prods = allProducts.length > 0 ? allProducts : getDemoProducts();
+  if (db) {
+    try {
+      var result = await db.from('product').select('*').order('created_at', { ascending: false });
+      if (result.data && result.data.length > 0) { prods = result.data; allProducts = prods; }
+    } catch(e) {}
+  }
+  if (prods.length === 0) {
+    container.innerHTML = '<div class="no-products">No products yet. Click Add Product tab!</div>';
+    return;
+  }
+  container.innerHTML = '<div style="overflow-x:auto"><table class="admin-table"><thead><tr><th>Name</th><th>Category</th><th>Price</th><th>Action</th></tr></thead><tbody>' +
+    prods.map(p => `<tr><td>${p.name}</td><td>${p.category}</td><td>₦${Number(p.price).toLocaleString()}</td><td><button class="action-btn edit-btn" onclick="editProduct('${p.id}')">Edit</button> <button class="action-btn delete-btn" onclick="deleteProduct('${p.id}')">Del</button></td></tr>`).join('') +
+    '</tbody></table></div>';
 }
 
 async function loadAdminOrders() {
-  const { data, error } = await db.from('orders').select('*').order('created_at', { ascending: false });
-  const ords = data || [];
-  document.getElementById('admin-orders-list').innerHTML = ords.length === 0
+  var container = document.getElementById('admin-orders-list');
+  if (!container) return;
+  container.innerHTML = '<div class="loading"><div class="spinner"></div>Loading...</div>';
+  var ords = [];
+  if (db) {
+    try {
+      var result = await db.from('orders').select('*').order('created_at', { ascending: false });
+      ords = result.data || [];
+    } catch(e) {}
+  }
+  container.innerHTML = ords.length === 0
     ? '<div class="no-products">No orders yet</div>'
     : `<div style="overflow-x:auto"><table class="admin-table"><thead><tr><th>Ref</th><th>Customer</th><th>Phone</th><th>Total</th><th>Status</th><th>Action</th></tr></thead><tbody>
-    ${ords.map(o => `<tr>
-      <td>#${o.ref}</td>
-      <td>${o.customer_name}</td>
-      <td>${o.customer_phone}</td>
-      <td>₦${Number(o.total).toLocaleString()}</td>
-      <td>
-        <select onchange="updateOrderStatus('${o.ref}', this.value)" style="border:1px solid var(--border);border-radius:4px;padding:.2rem;font-size:.75rem">
-          <option value="pending" ${o.status==='pending'?'selected':''}>Pending</option>
-          <option value="confirmed" ${o.status==='confirmed'?'selected':''}>Confirmed</option>
-          <option value="delivered" ${o.status==='delivered'?'selected':''}>Delivered</option>
-          <option value="cancelled" ${o.status==='cancelled'?'selected':''}>Cancelled</option>
-        </select>
-      </td>
-      <td><button class="action-btn edit-btn" onclick="viewOrder('${o.ref}')">View</button></td>
-    </tr>`).join('')}
+    ${ords.map(o => `<tr><td>#${o.ref}</td><td>${o.customer_name}</td><td>${o.customer_phone}</td><td>₦${Number(o.total).toLocaleString()}</td>
+    <td><select onchange="updateOrderStatus('${o.ref}',this.value)" style="border:1px solid var(--border);border-radius:4px;padding:.2rem;font-size:.75rem">
+      <option value="pending" ${o.status==='pending'?'selected':''}>Pending</option>
+      <option value="confirmed" ${o.status==='confirmed'?'selected':''}>Confirmed</option>
+      <option value="delivered" ${o.status==='delivered'?'selected':''}>Delivered</option>
+      <option value="cancelled" ${o.status==='cancelled'?'selected':''}>Cancelled</option>
+    </select></td>
+    <td><button class="action-btn edit-btn" onclick="viewOrder('${o.ref}')">View</button></td></tr>`).join('')}
     </tbody></table></div>`;
 }
 
 async function updateOrderStatus(ref, status) {
+  if (!db) return;
   await db.from('orders').update({ status }).eq('ref', ref);
   showToast('✅ Order status updated!');
 }
 
 async function viewOrder(ref) {
+  if (!db) { showToast('Database not connected'); return; }
   const { data } = await db.from('orders').select('*').eq('ref', ref).single();
   if (!data) return;
   const items = JSON.parse(data.items || '[]');
@@ -1444,10 +1342,10 @@ async function viewOrder(ref) {
       <div style="margin-bottom:.5rem"><strong>Phone:</strong> ${data.customer_phone}</div>
       <div style="margin-bottom:.5rem"><strong>Address:</strong> ${data.delivery_address}</div>
       <div style="margin-bottom:.5rem"><strong>Total:</strong> ₦${Number(data.total).toLocaleString()}</div>
-      <div style="margin-bottom:.5rem"><strong>Status:</strong> <span class="status-badge status-${data.status}">${data.status}</span></div>
-      <div style="margin-bottom:.8rem"><strong>Items:</strong></div>
+      <div style="margin-bottom:.8rem"><strong>Status:</strong> <span class="status-badge status-${data.status}">${data.status}</span></div>
+      <div style="margin-bottom:.5rem"><strong>Items:</strong></div>
       ${items.map(i => `<div style="display:flex;justify-content:space-between;margin-bottom:.3rem;padding:.3rem 0;border-bottom:1px solid var(--border)"><span>${i.name} ×${i.qty}</span><span>₦${(i.price*i.qty).toLocaleString()}</span></div>`).join('')}
-      ${data.proof_url ? `<div style="margin-top:.8rem"><strong>Payment Proof:</strong><br><img src="${data.proof_url}" style="width:100%;border-radius:8px;margin-top:.5rem" alt="Proof"></div>` : '<div style="margin-top:.5rem;color:var(--muted);font-size:.8rem">Payment proof stored locally</div>'}
+      ${data.proof_url ? `<div style="margin-top:.8rem"><strong>Payment Proof:</strong><br><img src="${data.proof_url}" style="width:100%;border-radius:8px;margin-top:.5rem" alt="Proof"></div>` : ''}
     </div>`;
   document.getElementById('order-modal').classList.add('open');
 }
@@ -1465,6 +1363,7 @@ function previewProductImg(input) {
 }
 
 async function saveProduct() {
+  if (!db) { showToast('❌ Database not connected!'); return; }
   const name = document.getElementById('prod-name').value.trim();
   const category = document.getElementById('prod-category').value;
   const price = parseFloat(document.getElementById('prod-price').value);
@@ -1474,51 +1373,40 @@ async function saveProduct() {
   const imgUrl = document.getElementById('prod-img-url').value.trim();
   const editId = document.getElementById('edit-product-id').value;
   const imgFile = document.getElementById('prod-img-upload').files[0];
-
   if (!name || !category || !price) { showToast('❌ Please fill name, category and price!'); return; }
-
   let finalImgUrl = imgUrl;
-
-  // Upload image if file selected
   if (imgFile) {
     try {
       const ext = imgFile.name.split('.').pop();
-      const fileName = `product-${Date.now()}.${ext}`;
-      const { data: uploadData } = await db.storage.from('product-images').upload(fileName, imgFile);
+      const { data: uploadData } = await db.storage.from('product-images').upload(`product-${Date.now()}.${ext}`, imgFile);
       if (uploadData) {
-        const { data: urlData } = db.storage.from('product-images').getPublicUrl(fileName);
+        const { data: urlData } = db.storage.from('product-images').getPublicUrl(uploadData.path);
         finalImgUrl = urlData.publicUrl;
       }
-    } catch(e) { console.log('Image upload failed, using URL'); }
+    } catch(e) {}
   }
-
   const productData = { name, category, price, old_price: oldPrice, description: desc, featured, image_url: finalImgUrl || null, emoji: getCategoryEmoji(category) };
-
   let error;
   if (editId) {
-    ({ error } = await db.from('products').update(productData).eq('id', editId));
+    ({ error } = await db.from('product').update(productData).eq('id', editId));
   } else {
-    ({ error } = await db.from('products').insert([{ ...productData, created_at: new Date().toISOString() }]));
+    ({ error } = await db.from('product').insert([{ ...productData, created_at: new Date().toISOString() }]));
   }
-
-  if (error) {
-    showToast('❌ Error saving product: ' + error.message);
-    return;
-  }
-
+  if (error) { showToast('❌ Error: ' + error.message); return; }
   showToast(editId ? '✅ Product updated!' : '✅ Product added!');
   cancelEdit();
-  loadShopProducts();
+  await loadAllProducts();
+  loadFeaturedProducts();
+  renderShopGrid(allProducts);
   switchAdminTab('products');
 }
 
 function getCategoryEmoji(cat) {
-  const map = { 'Shea Butter': '🧴', 'Face & Body': '✨', 'After Shave': '🧔', 'Hair Care': '💆', 'Herbal': '🌱', 'Combos': '🎁' };
-  return map[cat] || '🌿';
+  return { 'Shea Butter': '🧴', 'Face & Body': '✨', 'After Shave': '🧔', 'Hair Care': '💆', 'Herbal': '🌱', 'Combos': '🎁' }[cat] || '🌿';
 }
 
 async function editProduct(id) {
-  const p = allProducts.find(x => x.id == id) || (await db.from('products').select('*').eq('id', id).single()).data;
+  const p = allProducts.find(x => String(x.id) === String(id));
   if (!p) return;
   switchAdminTab('add-product');
   document.getElementById('add-product-title').textContent = 'Edit Product';
@@ -1536,19 +1424,18 @@ async function editProduct(id) {
 
 async function deleteProduct(id) {
   if (!confirm('Delete this product?')) return;
-  const { error } = await db.from('products').delete().eq('id', id);
-  if (!error) { showToast('✅ Product deleted!'); loadAdminProducts(); loadShopProducts(); }
+  if (!db) { showToast('❌ Database not connected'); return; }
+  const { error } = await db.from('product').delete().eq('id', id);
+  if (!error) { showToast('✅ Product deleted!'); await loadAllProducts(); loadAdminProducts(); }
 }
 
 function cancelEdit() {
-  document.getElementById('edit-product-id').value = '';
-  document.getElementById('prod-name').value = '';
+  ['edit-product-id','prod-name','prod-price','prod-old-price','prod-desc','prod-img-url'].forEach(id => {
+    var el = document.getElementById(id);
+    if (el) el.value = '';
+  });
   document.getElementById('prod-category').value = '';
-  document.getElementById('prod-price').value = '';
-  document.getElementById('prod-old-price').value = '';
-  document.getElementById('prod-desc').value = '';
   document.getElementById('prod-featured').checked = false;
-  document.getElementById('prod-img-url').value = '';
   document.getElementById('prod-img-preview').style.display = 'none';
   document.getElementById('add-product-title').textContent = 'Add New Product';
   document.getElementById('save-product-btn').textContent = 'Save Product';
@@ -1560,7 +1447,10 @@ function cancelEdit() {
 // ============================================================
 function doSearch(query) {
   if (!query.trim()) { document.getElementById('search-results').innerHTML = ''; return; }
-  const results = allProducts.filter(p => p.name.toLowerCase().includes(query.toLowerCase()) || p.category.toLowerCase().includes(query.toLowerCase()));
+  const results = allProducts.filter(p =>
+    p.name.toLowerCase().includes(query.toLowerCase()) ||
+    p.category.toLowerCase().includes(query.toLowerCase())
+  );
   document.getElementById('search-results').innerHTML = results.length > 0
     ? results.map(renderProductCard).join('')
     : '<div class="no-products" style="grid-column:span 2">No products found</div>';
