@@ -5,7 +5,11 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Skin Savvy – Natural Skin & Hair Care Essentials</title>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
-<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script>
+// Fallback if Supabase fails to load
+window.supabaseLoaded = false;
+</script>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2" onload="window.supabaseLoaded=true" onerror="window.supabaseLoaded=false"></script>
 <style>
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 :root{
@@ -42,7 +46,7 @@ nav{background:#fff;border-bottom:1px solid var(--border);position:sticky;top:0;
 .menu-close{background:none;border:none;color:#fff;cursor:pointer;font-size:1.5rem;line-height:1}
 .menu-search{padding:1rem 1.2rem;border-bottom:1px solid rgba(255,255,255,.1)}
 .menu-search input{width:100%;background:rgba(255,255,255,.1);border:none;border-radius:8px;padding:.7rem 1rem;color:#fff;font-family:inherit;font-size:.9rem;outline:none}
-.menu-search  input::placeholder{color:rgba(255,255,255,.5)}
+.menu-search input::placeholder{color:rgba(255,255,255,.5)}
 .menu-nav{flex:1;padding:.5rem 0}
 .menu-item{display:flex;align-items:center;justify-content:space-between;padding:.9rem 1.2rem;color:#fff;font-size:.9rem;font-weight:500;letter-spacing:.06em;cursor:pointer;border:none;background:none;width:100%;text-align:left;text-decoration:none;transition:.2s}
 .menu-item:hover{background:rgba(255,255,255,.08)}
@@ -52,14 +56,14 @@ nav{background:#fff;border-bottom:1px solid var(--border);position:sticky;top:0;
 .menu-subitem:hover{color:#fff}
 .menu-footer{padding:1.2rem;border-top:1px solid rgba(255,255,255,.1);display:flex;gap:1rem}
 .social-btn{width:36px;height:36px;border-radius:50%;display:flex;align-items:center;justify-content:center;text-decoration:none;font-size:.9rem}
-   
+
 /* PAGES */
 .page{display:none}
 .page.active{display:block}
 
 /* HERO */
 .hero{position:relative;min-height:85vh;display:flex;align-items:flex-end;overflow:hidden;background:#f8f5f0}
-.hero-img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center top}
+.hero-img{width:200px;height:200px;border-radius:50%;object-fit:cover;object-position:top}
 .hero-overlay{position:absolute;inset:0;background:linear-gradient(to top,rgba(0,0,0,.75) 0%,rgba(0,0,0,.2) 50%,transparent 100%)}
 .hero-content{position:relative;z-index:2;padding:2.5rem 1.5rem;color:#fff;width:100%}
 .hero-tag{display:inline-block;background:var(--green3);color:#fff;font-size:.72rem;font-weight:600;letter-spacing:.12em;text-transform:uppercase;padding:.35rem .8rem;border-radius:100px;margin-bottom:1rem}
@@ -306,7 +310,7 @@ footer{background:#0f1f17;color:#fff;padding:2.5rem 1.2rem 1.5rem}
 <body>
 
 <!-- ANNOUNCEMENT -->
-<div class="announce">🌿 Free delivery on orders above ₦20,000 | Glow Naturally, Stay Skin Savvy</div>
+<div class="announce">🌿 Skin Savvy | Natural Skin & Hair Care Essentials</div>
 
 <!-- NAV -->
 <nav>
@@ -315,7 +319,7 @@ footer{background:#0f1f17;color:#fff;padding:2.5rem 1.2rem 1.5rem}
       <span></span><span></span><span></span>
     </button>
     <div class="nav-logo">
-      <img src="https://i.imgur.com/placeholder.png" alt="Skin Savvy" id="nav-logo-img" onerror="this.style.display='none';document.getElementById('nav-logo-text').style.display='block'">
+      <img src="data:image/jpeg;base64,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" alt="Skin Savvy" id="nav-logo-img" style="height:44px;width:44px;border-radius:50%;object-fit:cover">
       <span id="nav-logo-text" style="display:none;font-family:'Cormorant Garamond',serif;font-size:1.2rem;font-weight:700;color:var(--green);letter-spacing:.08em">SKIN SAVVY</span>
     </div>
     <div class="nav-icons">
@@ -373,21 +377,18 @@ footer{background:#0f1f17;color:#fff;padding:2.5rem 1.2rem 1.5rem}
 
 <!-- HOME PAGE -->
 <div class="page active" id="home-page">
-  <div class="hero">
-    <img class="hero-img" src="https://i.imgur.com/placeholder.jpg" alt="Skin Savvy" id="hero-img" onerror="this.style.display='none'">
-    <div class="hero-overlay"></div>
-    <div class="hero-content">
-      <div class="hero-tag">🌿 Natural & Organic</div>
-      <h1>Glow Naturally, Stay Skin Savvy</h1>
-      <p>Pure natural skin & hair care essentials crafted for your skin's health and radiance.</p>
-      <div class="hero-btns">
-        <button class="btn-primary" onclick="showPage('shop-page')">Shop Now →</button>
-        <button class="btn-outline-white" onclick="showPage('about-page')">Learn More</button>
-      </div>
-    </div>
+  <div id="hero-section" style="background:linear-gradient(135deg,#f0fdf4 0%,#d8f3dc 100%);padding:2.5rem 1.2rem 2rem;text-align:center">
+  <img src="data:image/jpeg;base64,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" alt="Skin Savvy" style="width:180px;height:180px;border-radius:50%;object-fit:cover;object-position:top center;border:4px solid #52b788;margin-bottom:1.2rem;box-shadow:0 8px 24px rgba(45,106,79,.2);display:block;margin-left:auto;margin-right:auto">
+  <div style="display:inline-block;background:#52b788;color:#fff;font-size:.72rem;font-weight:600;letter-spacing:.12em;padding:.35rem .9rem;border-radius:100px;margin-bottom:.8rem">🌿 NATURAL & ORGANIC</div>
+  <h1 style="font-family:'Cormorant Garamond',serif;font-size:2.2rem;font-weight:700;color:#1a1a1a;line-height:1.2;margin-bottom:.8rem">Glow Naturally,<br>Stay Skin Savvy</h1>
+  <p style="font-size:.9rem;color:#555;line-height:1.6;margin-bottom:1.5rem">Pure natural skin & hair care essentials crafted for your skin's health and radiance.</p>
+  <div style="display:flex;gap:.8rem;justify-content:center;flex-wrap:wrap">
+    <button onclick="showPage('shop-page')" style="background:#2d6a4f;color:#fff;border:none;border-radius:100px;padding:.85rem 1.8rem;font-family:inherit;font-size:.95rem;font-weight:500;cursor:pointer">Shop Now →</button>
+    <button onclick="showPage('about-page')" style="background:transparent;color:#1a1a1a;border:1.5px solid #ccc;border-radius:100px;padding:.85rem 1.8rem;font-family:inherit;font-size:.95rem;cursor:pointer">Learn More</button>
   </div>
+</div>
 
-  <!-- CATEGORIES -->
+<!-- CATEGORIES -->
   <section class="categories">
     <div class="section-tag">Browse by Category</div>
     <div class="section-title">Our Collections</div>
@@ -443,17 +444,7 @@ footer{background:#0f1f17;color:#fff;padding:2.5rem 1.2rem 1.5rem}
     <button class="btn-white" onclick="showPage('about-page')">Our Story</button>
   </div>
 
-  <!-- VALUES -->
-  <section>
-    <div class="section-tag">Why Choose Us</div>
-    <div class="section-title">The Skin Savvy Difference</div>
-    <div class="values-grid">
-      <div class="value-card"><div class="value-icon">🌿</div><h3>100% Natural</h3><p>Pure plant-based ingredients only</p></div>
-      <div class="value-card"><div class="value-icon">✋</div><h3>Handcrafted</h3><p>Made with care and attention</p></div>
-      <div class="value-card"><div class="value-icon">🐰</div><h3>Cruelty Free</h3><p>Never tested on animals</p></div>
-      <div class="value-card"><div class="value-icon">💚</div><h3>Skin Safe</h3><p>Gentle for all skin types</p></div>
-    </div>
-  </section>
+
 
   <!-- TESTIMONIALS -->
   <section class="testimonials">
@@ -509,7 +500,7 @@ footer{background:#0f1f17;color:#fff;padding:2.5rem 1.2rem 1.5rem}
 <div class="page" id="product-detail-page">
   <div style="padding:.8rem 1.2rem;border-bottom:1px solid var(--border);display:flex;align-items:center;gap:.5rem;font-size:.8rem;color:var(--muted)">
     <button onclick="showPage('shop-page')" style="background:none;border:none;cursor:pointer;font-size:1.2rem;color:var(--text)">←</button>
-    <span onclick="showPage('home-page');cursor:pointer">Home</span> › <span onclick="showPage('shop-page')" style="cursor:pointer">Shop</span> › <span id="detail-breadcrumb" style="color:var(--green)">Product</span>
+    <span onclick="showPage('home-page')" style="cursor:pointer">Home</span> › <span onclick="showPage('shop-page')" style="cursor:pointer">Shop</span> › <span id="detail-breadcrumb" style="color:var(--green)">Product</span>
   </div>
   <div id="product-detail-content"></div>
 </div>
@@ -547,13 +538,75 @@ footer{background:#0f1f17;color:#fff;padding:2.5rem 1.2rem 1.5rem}
       <div class="form-group"><label>Email Address</label><input type="email" id="co-email" placeholder="your@email.com"></div>
       <div class="form-group"><label>Delivery Address *</label><input type="text" id="co-address" placeholder="Street address"></div>
       <div class="form-group"><label>City *</label><input type="text" id="co-city" placeholder="City"></div>
-      <div class="form-group"><label>State *</label><input type="text" id="co-state" placeholder="State"></div>
+      <div class="form-group"><label>State *</label>
+        <select id="co-state" onchange="calculateDelivery()">
+          <option value="">-- Select your state --</option>
+          <option value="Onitsha">Onitsha (Anambra)</option>
+          <option value="Anambra">Anambra State (Other)</option>
+          <option value="Imo">Imo State</option>
+          <option value="Enugu">Enugu State</option>
+          <option value="Ebonyi">Ebonyi State</option>
+          <option value="Cross River">Cross River State</option>
+          <option value="Abia">Abia State</option>
+          <option value="Rivers">Rivers State (Port Harcourt)</option>
+          <option value="Lagos">Lagos State</option>
+          <option value="Abuja">Abuja (FCT)</option>
+          <option value="Kano">Kano State</option>
+          <option value="Kaduna">Kaduna State</option>
+          <option value="Katsina">Katsina State</option>
+          <option value="Ogun">Ogun State</option>
+          <option value="Oyo">Oyo State</option>
+          <option value="Osun">Osun State</option>
+          <option value="Ondo">Ondo State</option>
+          <option value="Ekiti">Ekiti State</option>
+          <option value="Kwara">Kwara State</option>
+          <option value="Kogi">Kogi State</option>
+          <option value="Benue">Benue State</option>
+          <option value="Niger">Niger State</option>
+          <option value="Plateau">Plateau State</option>
+          <option value="Nassarawa">Nassarawa State</option>
+          <option value="Taraba">Taraba State</option>
+          <option value="Adamawa">Adamawa State</option>
+          <option value="Bauchi">Bauchi State</option>
+          <option value="Gombe">Gombe State</option>
+          <option value="Yobe">Yobe State</option>
+          <option value="Borno">Borno State</option>
+          <option value="Sokoto">Sokoto State</option>
+          <option value="Zamfara">Zamfara State</option>
+          <option value="Kebbi">Kebbi State</option>
+          <option value="Jigawa">Jigawa State</option>
+          <option value="Delta">Delta State</option>
+          <option value="Edo">Edo State</option>
+          <option value="Bayelsa">Bayelsa State</option>
+          <option value="Akwa Ibom">Akwa Ibom State</option>
+          <option value="Anambra">Anambra State</option>
+        </select>
+      </div>
+      <div id="delivery-fee-box" style="display:none;background:var(--green-bg);border:1.5px solid var(--green3);border-radius:10px;padding:.8rem 1rem;margin-top:.5rem;font-size:.88rem">
+        <div style="display:flex;justify-content:space-between;align-items:center">
+          <span>🚚 Delivery Fee:</span>
+          <strong id="delivery-fee-display" style="color:var(--green)">₦0</strong>
+        </div>
+        <div style="font-size:.75rem;color:var(--muted);margin-top:.3rem">⏱️ You will receive your order within 7 days of purchase</div>
+      </div>
       <div class="form-group"><label>Additional Notes</label><textarea id="co-notes" rows="2" placeholder="Any special instructions..."></textarea></div>
     </div>
 
     <div class="form-section">
       <h3>💳 Payment</h3>
       <p style="font-size:.85rem;color:var(--muted);margin-bottom:.8rem">Transfer the exact amount to the account below, then upload your proof of payment.</p>
+      <div style="background:#fff8e1;border:1.5px solid #ffc107;border-radius:10px;padding:.8rem 1rem;margin-bottom:.8rem;font-size:.82rem">
+        <strong>🚚 Delivery Fees & Time:</strong><br>
+        <div style="display:grid;grid-template-columns:1fr auto;gap:.3rem .5rem;margin-top:.6rem;color:var(--muted)">
+          <span>Within Onitsha</span><span style="font-weight:600;color:var(--text)">₦2,500</span>
+          <span>Within Anambra State</span><span style="font-weight:600;color:var(--text)">₦3,000</span>
+          <span>South East (Imo, Enugu, Ebonyi, Cross River, Abia)</span><span style="font-weight:600;color:var(--text)">₦3,000</span>
+          <span>Port Harcourt</span><span style="font-weight:600;color:var(--text)">₦3,000</span>
+          <span>Lagos & Abuja</span><span style="font-weight:600;color:var(--text)">₦6,000</span>
+          <span>Other States</span><span style="font-weight:600;color:var(--text)">₦3,000</span>
+        </div>
+        <div style="margin-top:.6rem;background:var(--green);color:#fff;border-radius:6px;padding:.4rem .6rem;font-size:.75rem;text-align:center">⏱️ You will receive your order within 7 days of purchase</div>
+      </div>
       <div class="bank-details">
         <h4>🏦 Bank Transfer Details</h4>
         <div class="bank-row"><span class="bank-label">Bank Name:</span><span class="bank-value">Opay</span></div>
@@ -577,7 +630,7 @@ footer{background:#0f1f17;color:#fff;padding:2.5rem 1.2rem 1.5rem}
       <div id="co-items"></div>
       <div style="border-top:1px solid var(--border);margin-top:.8rem;padding-top:.8rem">
         <div style="display:flex;justify-content:space-between;font-size:.9rem;margin-bottom:.4rem"><span>Subtotal</span><span id="co-subtotal">₦0</span></div>
-        <div style="display:flex;justify-content:space-between;font-size:.9rem;margin-bottom:.4rem"><span>Delivery</span><span style="color:var(--green)">Calculated after order</span></div>
+        <div style="display:flex;justify-content:space-between;font-size:.9rem;margin-bottom:.4rem"><span>Delivery</span><span id="co-delivery-display" style="color:var(--green)">Select state above</span></div>
         <div style="display:flex;justify-content:space-between;font-weight:700;font-size:1rem;margin-top:.5rem;padding-top:.5rem;border-top:1px solid var(--border)"><span>Total</span><span id="co-total2">₦0</span></div>
       </div>
     </div>
@@ -834,8 +887,12 @@ footer{background:#0f1f17;color:#fff;padding:2.5rem 1.2rem 1.5rem}
 // ============================================================
 const SUPABASE_URL = 'https://bxnkzvybrqbplzgvymbo.supabase.co';
 const SUPABASE_KEY = 'sb_publishable_gKZ6D34gnLDXQjUcc5ipaw_uC3q47yH';
-const { createClient } = supabase;
-const db = createClient(SUPABASE_URL, SUPABASE_KEY);
+let db = null;
+try {
+  if (typeof supabase !== 'undefined' && supabase.createClient) {
+    db = supabase.createClient(SUPABASE_URL, SUPABASE_KEY);
+  }
+} catch(e) { db = null; }
 
 const ADMIN_PASSWORD = 'SkinSavvy@Admin2026';
 
@@ -851,34 +908,34 @@ let isAdmin = false;
 // ============================================================
 // INIT
 // ============================================================
+var _inited = false;
 async function init() {
-  setupSupabaseTables();
+  if (_inited) return;
+  _inited = true;
   updateCartBadge();
   loadFeaturedProducts();
   loadShopProducts();
+  renderAuthPage();
 
-  // Auth state
-  const { data: { session } } = await db.auth.getSession();
-  if (session) {
-    currentUser = session.user;
-    renderAccountPage();
-  } else {
-    renderAuthPage();
-  }
+  if (!db) return;
 
-  db.auth.onAuthStateChange((event, session) => {
-    currentUser = session?.user || null;
-    if (document.getElementById('account-page').classList.contains('active')) {
-      if (currentUser) renderAccountPage();
-      else renderAuthPage();
-    }
-  });
+  try {
+    const { data: { session } } = await db.auth.getSession();
+    if (session) { currentUser = session.user; }
+    db.auth.onAuthStateChange((event, session) => {
+      currentUser = session?.user || null;
+      if (document.getElementById('account-page').classList.contains('active')) {
+        if (currentUser) renderAccountPage();
+        else renderAuthPage();
+      }
+    });
+  } catch(e) { console.log('Auth error:', e); }
 }
 
 async function setupSupabaseTables() {
   // Try to create tables if they don't exist
   try {
-    await db.from('products').select('id').limit(1);
+    await db.from('product').select('id').limit(1);
   } catch(e) {
     console.log('Tables may need to be created');
   }
@@ -916,7 +973,8 @@ function toggleSubMenu(id) {
 // PRODUCTS
 // ============================================================
 async function loadFeaturedProducts() {
-  const { data, error } = await db.from('products').select('*').eq('featured', true).limit(4);
+  if (!db) { container.innerHTML = getDemoProducts().slice(0,4).map(renderProductCard).join(''); allProducts = getDemoProducts(); return; }
+  const { data, error } = await db.from('product').select('*').eq('featured', true).limit(4);
   const container = document.getElementById('featured-products');
 
   if (error || !data || data.length === 0) {
@@ -929,7 +987,8 @@ async function loadFeaturedProducts() {
 }
 
 async function loadShopProducts() {
-  const { data, error } = await db.from('products').select('*').order('created_at', { ascending: false });
+  if (!db) { allProducts = getDemoProducts(); renderShopGrid(allProducts); return; }
+  const { data, error } = await db.from('product').select('*').order('created_at', { ascending: false });
   const grid = document.getElementById('shop-grid');
 
   if (error || !data || data.length === 0) {
@@ -1016,7 +1075,7 @@ function sortProducts(val) {
 }
 
 function showProductDetail(id) {
-  const p = allProducts.find(x => x.id == id || x.id === id);
+  const p = allProducts.find(x => String(x.id) === String(id));
   if (!p) return;
   document.getElementById('detail-breadcrumb').textContent = p.name;
 
@@ -1065,7 +1124,7 @@ function addToCartDetail(id) {
 // CART
 // ============================================================
 function addToCart(id) {
-  const p = allProducts.find(x => x.id == id || x.id === id);
+  const p = allProducts.find(x => String(x.id) === String(id));
   if (!p) return;
   const existing = cart.find(i => i.id == id);
   if (existing) existing.qty++;
@@ -1111,7 +1170,7 @@ function renderCart() {
       </div>`).join('')}
     <div class="cart-summary">
       <div class="cart-summary-row"><span>Subtotal (${cart.reduce((s,i)=>s+i.qty,0)} items)</span><span>₦${total.toLocaleString()}</span></div>
-      <div class="cart-summary-row"><span>Delivery</span><span style="color:var(--green)">Calculated after order</span></div>
+      <div class="cart-summary-row"><span>Delivery</span><span style="color:var(--green)">Selected at checkout</span></div>
       <div class="cart-summary-row total"><span>Total</span><span>₦${total.toLocaleString()}</span></div>
       <button class="btn-checkout" onclick="showPage('checkout-page')">Proceed to Checkout →</button>
       <button onclick="showPage('shop-page')" style="width:100%;background:none;border:1.5px solid var(--border);border-radius:12px;padding:.8rem;font-family:inherit;font-size:.9rem;cursor:pointer;margin-top:.5rem">← Continue Shopping</button>
@@ -1205,7 +1264,7 @@ async function placeOrder() {
       created_at: new Date().toISOString()
     };
 
-    const { error } = await db.from('orders').insert([orderData]);
+    if (!db) throw new Error('no db'); const { error } = await db.from('orders').insert([orderData]);
     if (error) throw error;
 
     // Success
@@ -1310,7 +1369,7 @@ function renderAccountPage() {
 }
 
 async function logout() {
-  await db.auth.signOut();
+  if (db) await db.auth.signOut();
   currentUser = null;
   renderAuthPage();
   showToast('Logged out successfully');
@@ -1336,263 +1395,51 @@ function adminLogout() {
 }
 
 function switchAdminTab(tab) {
-  document.querySelectorAll('.admin-tab').forEach(t => t.classList.remove('active'));
-  document.querySelectorAll('[id^="admin-"]').forEach(d => {
-    if (!d.classList.contains('admin-page') && !d.classList.contains('admin-header') && !d.classList.contains('admin-nav') && !d.classList.contains('admin-content') && !d.classList.contains('admin-tab')) {
-      d.style.display = 'none';
-    }
-  });
-
-  const tabs = { 'dashboard': 'admin-dashboard', 'products': 'admin-products', 'orders': 'admin-orders', 'add-product': 'admin-add-product' };
-  if (tabs[tab]) {
-    document.getElementById(tabs[tab]).style.display = 'block';
-    const tabEl = document.querySelectorAll('.admin-tab');
-    const tabIdx = Object.keys(tabs).indexOf(tab);
-    if (tabEl[tabIdx]) tabEl[tabIdx].classList.add('active');
+  var sections = ['admin-dashboard','admin-products','admin-orders','admin-add-product'];
+  for (var i = 0; i < sections.length; i++) {
+    var el = document.getElementById(sections[i]);
+    if (el) el.style.display = 'none';
   }
+  document.querySelectorAll('.admin-tab').forEach(function(t){ t.classList.remove('active'); });
+
+  var show = '';
+  if (tab === 'dashboard') show = 'admin-dashboard';
+  else if (tab === 'products') show = 'admin-products';
+  else if (tab === 'orders') show = 'admin-orders';
+  else if (tab === 'add-product') show = 'admin-add-product';
+
+  var showEl = document.getElementById(show);
+  if (showEl) showEl.style.display = 'block';
+
+  var allTabs = document.querySelectorAll('.admin-tab');
+  var tabIdx = ['dashboard','products','orders','add-product'].indexOf(tab);
+  if (allTabs[tabIdx]) allTabs[tabIdx].classList.add('active');
 
   if (tab === 'dashboard') loadAdminDashboard();
-  if (tab === 'products') loadAdminProducts();
-  if (tab === 'orders') loadAdminOrders();
+  else if (tab === 'products') loadAdminProducts();
+  else if (tab === 'orders') loadAdminOrders();
+  else if (tab === 'add-product') cancelEdit();
 }
 
 async function loadAdminDashboard() {
-  const [{ data: products }, { data: orders }] = await Promise.all([
-    db.from('products').select('*'),
-    db.from('orders').select('*')
-  ]);
+  let products = [], orders = [];
+  if (db) {
+    try {
+      const [pr, or] = await Promise.all([
+        db.from('product').select('*'),
+        db.from('orders').select('*')
+      ]);
+      products = pr.data || [];
+      orders = or.data || [];
+    } catch(e) {}
+  }
+  const _dummy = null; // placeholder
+  const _data = { products, orders };
 
-  const prods = products || allProducts || [];
+  const prods = products.length > 0 ? products : (allProducts.length > 0 ? allProducts : getDemoProducts());
   const ords = orders || [];
   const pending = ords.filter(o => o.status === 'pending').length;
   const revenue = ords.filter(o => o.status !== 'cancelled').reduce((s, o) => s + (o.total || 0), 0);
 
   document.getElementById('stat-products').textContent = prods.length;
-  document.getElementById('stat-orders').textContent = ords.length;
-  document.getElementById('stat-pending').textContent = pending;
-  document.getElementById('stat-revenue').textContent = `₦${revenue.toLocaleString()}`;
-
-  const recent = ords.slice(-5).reverse();
-  document.getElementById('recent-orders-list').innerHTML = recent.length === 0
-    ? '<div class="no-products">No orders yet</div>'
-    : `<div style="overflow-x:auto"><table class="admin-table"><thead><tr><th>Ref</th><th>Customer</th><th>Total</th><th>Status</th><th>Action</th></tr></thead><tbody>
-    ${recent.map(o => `<tr>
-      <td>#${o.ref}</td>
-      <td>${o.customer_name}</td>
-      <td>₦${Number(o.total).toLocaleString()}</td>
-      <td><span class="status-badge status-${o.status}">${o.status}</span></td>
-      <td><button class="action-btn edit-btn" onclick="viewOrder('${o.ref}')">View</button></td>
-    </tr>`).join('')}
-    </tbody></table></div>`;
-}
-
-async function loadAdminProducts() {
-  const { data, error } = await db.from('products').select('*').order('created_at', { ascending: false });
-  const prods = data || allProducts;
-  document.getElementById('admin-products-list').innerHTML = prods.length === 0
-    ? '<div class="no-products">No products yet. Add your first product!</div>'
-    : `<div style="overflow-x:auto"><table class="admin-table"><thead><tr><th>Name</th><th>Category</th><th>Price</th><th>Actions</th></tr></thead><tbody>
-    ${prods.map(p => `<tr>
-      <td>${p.name}</td>
-      <td>${p.category}</td>
-      <td>₦${Number(p.price).toLocaleString()}</td>
-      <td>
-        <button class="action-btn edit-btn" onclick="editProduct('${p.id}')">Edit</button>
-        <button class="action-btn delete-btn" onclick="deleteProduct('${p.id}')">Delete</button>
-      </td>
-    </tr>`).join('')}
-    </tbody></table></div>`;
-}
-
-async function loadAdminOrders() {
-  const { data, error } = await db.from('orders').select('*').order('created_at', { ascending: false });
-  const ords = data || [];
-  document.getElementById('admin-orders-list').innerHTML = ords.length === 0
-    ? '<div class="no-products">No orders yet</div>'
-    : `<div style="overflow-x:auto"><table class="admin-table"><thead><tr><th>Ref</th><th>Customer</th><th>Phone</th><th>Total</th><th>Status</th><th>Action</th></tr></thead><tbody>
-    ${ords.map(o => `<tr>
-      <td>#${o.ref}</td>
-      <td>${o.customer_name}</td>
-      <td>${o.customer_phone}</td>
-      <td>₦${Number(o.total).toLocaleString()}</td>
-      <td>
-        <select onchange="updateOrderStatus('${o.ref}', this.value)" style="border:1px solid var(--border);border-radius:4px;padding:.2rem;font-size:.75rem">
-          <option value="pending" ${o.status==='pending'?'selected':''}>Pending</option>
-          <option value="confirmed" ${o.status==='confirmed'?'selected':''}>Confirmed</option>
-          <option value="delivered" ${o.status==='delivered'?'selected':''}>Delivered</option>
-          <option value="cancelled" ${o.status==='cancelled'?'selected':''}>Cancelled</option>
-        </select>
-      </td>
-      <td><button class="action-btn edit-btn" onclick="viewOrder('${o.ref}')">View</button></td>
-    </tr>`).join('')}
-    </tbody></table></div>`;
-}
-
-async function updateOrderStatus(ref, status) {
-  await db.from('orders').update({ status }).eq('ref', ref);
-  showToast('✅ Order status updated!');
-}
-
-async function viewOrder(ref) {
-  const { data } = await db.from('orders').select('*').eq('ref', ref).single();
-  if (!data) return;
-  const items = JSON.parse(data.items || '[]');
-  document.getElementById('order-modal-content').innerHTML = `
-    <div style="font-size:.85rem">
-      <div style="margin-bottom:.5rem"><strong>Ref:</strong> #${data.ref}</div>
-      <div style="margin-bottom:.5rem"><strong>Customer:</strong> ${data.customer_name}</div>
-      <div style="margin-bottom:.5rem"><strong>Phone:</strong> ${data.customer_phone}</div>
-      <div style="margin-bottom:.5rem"><strong>Address:</strong> ${data.delivery_address}</div>
-      <div style="margin-bottom:.5rem"><strong>Total:</strong> ₦${Number(data.total).toLocaleString()}</div>
-      <div style="margin-bottom:.5rem"><strong>Status:</strong> <span class="status-badge status-${data.status}">${data.status}</span></div>
-      <div style="margin-bottom:.8rem"><strong>Items:</strong></div>
-      ${items.map(i => `<div style="display:flex;justify-content:space-between;margin-bottom:.3rem;padding:.3rem 0;border-bottom:1px solid var(--border)"><span>${i.name} ×${i.qty}</span><span>₦${(i.price*i.qty).toLocaleString()}</span></div>`).join('')}
-      ${data.proof_url ? `<div style="margin-top:.8rem"><strong>Payment Proof:</strong><br><img src="${data.proof_url}" style="width:100%;border-radius:8px;margin-top:.5rem" alt="Proof"></div>` : '<div style="margin-top:.5rem;color:var(--muted);font-size:.8rem">Payment proof stored locally</div>'}
-    </div>`;
-  document.getElementById('order-modal').classList.add('open');
-}
-
-function previewProductImg(input) {
-  const file = input.files[0];
-  if (!file) return;
-  const reader = new FileReader();
-  reader.onload = e => {
-    const preview = document.getElementById('prod-img-preview');
-    preview.src = e.target.result;
-    preview.style.display = 'block';
-  };
-  reader.readAsDataURL(file);
-}
-
-async function saveProduct() {
-  const name = document.getElementById('prod-name').value.trim();
-  const category = document.getElementById('prod-category').value;
-  const price = parseFloat(document.getElementById('prod-price').value);
-  const oldPrice = parseFloat(document.getElementById('prod-old-price').value) || null;
-  const desc = document.getElementById('prod-desc').value.trim();
-  const featured = document.getElementById('prod-featured').checked;
-  const imgUrl = document.getElementById('prod-img-url').value.trim();
-  const editId = document.getElementById('edit-product-id').value;
-  const imgFile = document.getElementById('prod-img-upload').files[0];
-
-  if (!name || !category || !price) { showToast('❌ Please fill name, category and price!'); return; }
-
-  let finalImgUrl = imgUrl;
-
-  // Upload image if file selected
-  if (imgFile) {
-    try {
-      const ext = imgFile.name.split('.').pop();
-      const fileName = `product-${Date.now()}.${ext}`;
-      const { data: uploadData } = await db.storage.from('product-images').upload(fileName, imgFile);
-      if (uploadData) {
-        const { data: urlData } = db.storage.from('product-images').getPublicUrl(fileName);
-        finalImgUrl = urlData.publicUrl;
-      }
-    } catch(e) { console.log('Image upload failed, using URL'); }
-  }
-
-  const productData = { name, category, price, old_price: oldPrice, description: desc, featured, image_url: finalImgUrl || null, emoji: getCategoryEmoji(category) };
-
-  let error;
-  if (editId) {
-    ({ error } = await db.from('products').update(productData).eq('id', editId));
-  } else {
-    ({ error } = await db.from('products').insert([{ ...productData, created_at: new Date().toISOString() }]));
-  }
-
-  if (error) {
-    showToast('❌ Error saving product: ' + error.message);
-    return;
-  }
-
-  showToast(editId ? '✅ Product updated!' : '✅ Product added!');
-  cancelEdit();
-  loadShopProducts();
-  switchAdminTab('products');
-}
-
-function getCategoryEmoji(cat) {
-  const map = { 'Shea Butter': '🧴', 'Face & Body': '✨', 'After Shave': '🧔', 'Hair Care': '💆', 'Herbal': '🌱', 'Combos': '🎁' };
-  return map[cat] || '🌿';
-}
-
-async function editProduct(id) {
-  const p = allProducts.find(x => x.id == id) || (await db.from('products').select('*').eq('id', id).single()).data;
-  if (!p) return;
-  switchAdminTab('add-product');
-  document.getElementById('add-product-title').textContent = 'Edit Product';
-  document.getElementById('edit-product-id').value = p.id;
-  document.getElementById('prod-name').value = p.name;
-  document.getElementById('prod-category').value = p.category;
-  document.getElementById('prod-price').value = p.price;
-  document.getElementById('prod-old-price').value = p.old_price || '';
-  document.getElementById('prod-desc').value = p.description || '';
-  document.getElementById('prod-featured').checked = p.featured || false;
-  document.getElementById('prod-img-url').value = p.image_url || '';
-  document.getElementById('save-product-btn').textContent = 'Update Product';
-  document.getElementById('cancel-edit-btn').style.display = 'block';
-}
-
-async function deleteProduct(id) {
-  if (!confirm('Delete this product?')) return;
-  const { error } = await db.from('products').delete().eq('id', id);
-  if (!error) { showToast('✅ Product deleted!'); loadAdminProducts(); loadShopProducts(); }
-}
-
-function cancelEdit() {
-  document.getElementById('edit-product-id').value = '';
-  document.getElementById('prod-name').value = '';
-  document.getElementById('prod-category').value = '';
-  document.getElementById('prod-price').value = '';
-  document.getElementById('prod-old-price').value = '';
-  document.getElementById('prod-desc').value = '';
-  document.getElementById('prod-featured').checked = false;
-  document.getElementById('prod-img-url').value = '';
-  document.getElementById('prod-img-preview').style.display = 'none';
-  document.getElementById('add-product-title').textContent = 'Add New Product';
-  document.getElementById('save-product-btn').textContent = 'Save Product';
-  document.getElementById('cancel-edit-btn').style.display = 'none';
-}
-
-// ============================================================
-// SEARCH
-// ============================================================
-function doSearch(query) {
-  if (!query.trim()) { document.getElementById('search-results').innerHTML = ''; return; }
-  const results = allProducts.filter(p => p.name.toLowerCase().includes(query.toLowerCase()) || p.category.toLowerCase().includes(query.toLowerCase()));
-  document.getElementById('search-results').innerHTML = results.length > 0
-    ? results.map(renderProductCard).join('')
-    : '<div class="no-products" style="grid-column:span 2">No products found</div>';
-}
-
-function searchProducts(query) {
-  if (!query.trim()) return;
-  toggleMenu();
-  showPage('search-page');
-  document.getElementById('main-search').value = query;
-  doSearch(query);
-}
-
-// ============================================================
-// UTILS
-// ============================================================
-function showToast(msg) {
-  const toast = document.getElementById('toast');
-  toast.textContent = msg;
-  toast.classList.add('show');
-  setTimeout(() => toast.classList.remove('show'), 3000);
-}
-
-function closeModal(id) {
-  document.getElementById(id).classList.remove('open');
-}
-
-// ============================================================
-// START
-// ============================================================
-init();
-</script>
-</body>
-  </html>
-  
+  do
